@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Thêm mới một Mail Templates",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Mail Templates",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Một Mail Templates mới được tạo với định danh {{ param }}",
+      "updated": "Một Mail Templates cập nhật với định danh {{ param }}",
+      "deleted": "Một Mail Templates đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Mail Templates {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

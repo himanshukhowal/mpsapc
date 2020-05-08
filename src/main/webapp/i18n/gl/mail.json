@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "Crear novo Mail",
+        "createOrEditLabel": "Crear ou editar Mail",
+        "notFound": "No Mail found"
+      },
+      "created": "Un novo Mail foi creado co identificador {{ param }}",
+      "updated": "Un Mail foi actualizado co identificador {{ param }}",
+      "deleted": "Un Mail foi eliminado co identificador {{ param }}",
+      "delete": {
+        "question": "Seguro que desexa eliminar Mail {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}

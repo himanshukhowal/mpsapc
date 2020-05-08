@@ -21,7 +21,8 @@
       "activeStatus": "Active Status",
       "dateCreated": "Date Created",
       "dateModified": "Date Modified",
-      "journalAcronym": "Journal Acronym"
+      "journalAcronym": "Journal Acronym",
+      "mailingConfiguration": "Mailing Configuration"
     }
   }
 }

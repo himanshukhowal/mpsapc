@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Luo Mail Templates",
+        "createOrEditLabel": "Luo tai muokkaa Mail Templates",
+        "notFound": "Mail Templates ei löytynyt"
+      },
+      "created": "Uusi Mail Templates on luotu, id: {{ param }}",
+      "updated": "Mail Templates on päivitetty, id: {{ param }}",
+      "deleted": "Mail Templates on päivitetty, id: {{ param }}",
+      "delete": {
+        "question": "Haluatko varmasti poistaa Mail Templates {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

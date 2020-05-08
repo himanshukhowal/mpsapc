@@ -1,5 +1,6 @@
 import { Moment } from 'moment';
 import { IManuscript } from 'app/shared/model/manuscript.model';
+import { IMail } from 'app/shared/model/mail.model';
 import { ActiveStatus } from 'app/shared/model/enumerations/active-status.model';
 
 export interface IJournal {
@@ -10,6 +11,7 @@ export interface IJournal {
   dateCreated?: Moment;
   dateModified?: Moment;
   journalAcronyms?: IManuscript[];
+  mailingConfigurations?: IMail[];
 }
 
 export class Journal implements IJournal {
@@ -20,6 +22,7 @@ export class Journal implements IJournal {
     public activeStatus?: ActiveStatus,
     public dateCreated?: Moment,
     public dateModified?: Moment,
-    public journalAcronyms?: IManuscript[]
+    public journalAcronyms?: IManuscript[],
+    public mailingConfigurations?: IMail[]
   ) {}
 }

@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "创建新 Mail",
+        "createOrEditLabel": "创建或编辑 Mail",
+        "notFound": "No Mail found"
+      },
+      "created": "Mail {{ param }} 创建成功",
+      "updated": "Mail {{ param }} 更新成功",
+      "deleted": "Mail {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Mail {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}

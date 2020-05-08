@@ -51,6 +51,10 @@ public class Journal implements Serializable {
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Manuscript> journalAcronyms = new HashSet<>();
 
+    @OneToMany(mappedBy = "associatedJournal")
+    @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
+    private Set<Mail> mailingConfigurations = new HashSet<>();
+
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
         return id;
@@ -148,6 +152,31 @@ public class Journal implements Serializable {
 
     public void setJournalAcronyms(Set<Manuscript> manuscripts) {
         this.journalAcronyms = manuscripts;
+    }
+
+    public Set<Mail> getMailingConfigurations() {
+        return mailingConfigurations;
+    }
+
+    public Journal mailingConfigurations(Set<Mail> mail) {
+        this.mailingConfigurations = mail;
+        return this;
+    }
+
+    public Journal addMailingConfiguration(Mail mail) {
+        this.mailingConfigurations.add(mail);
+        mail.setAssociatedJournal(this);
+        return this;
+    }
+
+    public Journal removeMailingConfiguration(Mail mail) {
+        this.mailingConfigurations.remove(mail);
+        mail.setAssociatedJournal(null);
+        return this;
+    }
+
+    public void setMailingConfigurations(Set<Mail> mail) {
+        this.mailingConfigurations = mail;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
 

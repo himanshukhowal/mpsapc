@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Pridať Mail Templates",
+        "createOrEditLabel": "Pridať alebo upraviť Mail Templates",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Bol vytvorený potomok entity Mail Templates s identifikátorom {{ param }}",
+      "updated": "Potomok entity Mail Templates s identifikátorom {{ param }} bol upravený.",
+      "deleted": "Potomok entity Mail Templates s identifikátorom {{ param }} bol vymazaný.",
+      "delete": {
+        "question": "Ste si istý, že chcete vymazať Mail Templates {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

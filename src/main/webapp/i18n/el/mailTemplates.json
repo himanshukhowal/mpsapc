@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Δημιουργήστε ένα νέο Mail Templates",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Mail Templates",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Ένα νέο Mail Templates έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Mail Templates έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Mail Templates έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Mail Templates {{ id }};"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

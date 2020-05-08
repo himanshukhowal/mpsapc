@@ -82,6 +82,28 @@ entity Payment{
 
 paginate Payment with pagination
 
+entity Mail{
+	mailConfigurationName String required,
+	stageName APCStatus required,
+    activeStatus ActiveStatus required,
+    dateCreated LocalDate,
+    dateModified LocalDate
+}
+
+paginate Mail with pagination
+
+entity MailTemplates{
+	templateName String required,
+    mailCC String,
+    mailBCC String,
+    mailSubject String,
+    mailBody String,
+    dateCreated LocalDate,
+    dateModified LocalDate
+}
+
+paginate MailTemplates with pagination
+
 entity ContactUs{
 	name String required,
 	email String required pattern(/^[^@\s]+@[^@\s]+\.[^@\s]+$/),
@@ -93,7 +115,9 @@ entity ContactUs{
 
 relationship OneToMany{
 	Journal {journalAcronym required} to Manuscript{manuscriptJournalAcronym(journalAcronym) required},
-    Author {firstName required} to Manuscript{manuscriptAuthorName(firstName) required}
+    Author {firstName required} to Manuscript{manuscriptAuthorName(firstName) required},
+    Journal {mailingConfiguration(journalAcronym) required} to Mail{associatedJournal(journalAcronym) required},
+    MailTemplates{templateName required} to Mail{associatedMailTemplate(templateName) required}
 }
 
 relationship OneToOne{

@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Янги Mail Templates қўшиш",
+        "createOrEditLabel": "Mail Templatesни таҳрирлаш",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Mail Templates {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Mail Templates сақланди.",
+      "deleted": "{{ param }}- Mail Templates ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Mail Templatesни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "కొత్త Mail Templates  సృష్టించండి",
+        "createOrEditLabel": "Mail Templates సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Mail Templates సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Mail Templates సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Mail Templates తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Mail Templates {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

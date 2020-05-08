@@ -1,4 +1,5 @@
 export const enum WaiverType {
   Country = 'Country',
-  Institute = 'Institute'
+  Institute = 'Institute',
+  Journal = 'Journal'
 }

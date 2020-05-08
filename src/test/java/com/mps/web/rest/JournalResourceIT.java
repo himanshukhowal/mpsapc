@@ -3,6 +3,7 @@ package com.mps.web.rest;
 import com.mps.MpsapcApp;
 import com.mps.domain.Journal;
 import com.mps.domain.Manuscript;
+import com.mps.domain.Mail;
 import com.mps.repository.JournalRepository;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -83,6 +84,16 @@ public class JournalResourceIT {
             manuscript = TestUtil.findAll(em, Manuscript.class).get(0);
         }
         journal.getJournalAcronyms().add(manuscript);
+        // Add required entity
+        Mail mail;
+        if (TestUtil.findAll(em, Mail.class).isEmpty()) {
+            mail = MailResourceIT.createEntity(em);
+            em.persist(mail);
+            em.flush();
+        } else {
+            mail = TestUtil.findAll(em, Mail.class).get(0);
+        }
+        journal.getMailingConfigurations().add(mail);
         return journal;
     }
     /**
@@ -108,6 +119,16 @@ public class JournalResourceIT {
             manuscript = TestUtil.findAll(em, Manuscript.class).get(0);
         }
         journal.getJournalAcronyms().add(manuscript);
+        // Add required entity
+        Mail mail;
+        if (TestUtil.findAll(em, Mail.class).isEmpty()) {
+            mail = MailResourceIT.createUpdatedEntity(em);
+            em.persist(mail);
+            em.flush();
+        } else {
+            mail = TestUtil.findAll(em, Mail.class).get(0);
+        }
+        journal.getMailingConfigurations().add(mail);
         return journal;
     }
 

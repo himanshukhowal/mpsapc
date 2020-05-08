@@ -39,6 +39,13 @@
             "otherEntityRelationshipName": "manuscriptJournalAcronym",
             "relationshipValidateRules": "required",
             "relationshipName": "journalAcronym"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "mail",
+            "otherEntityRelationshipName": "associatedJournal",
+            "relationshipValidateRules": "required",
+            "relationshipName": "mailingConfiguration"
         }
     ],
     "changelogDate": "20200508005500",

@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "नवीन Mail तयार करा",
+        "createOrEditLabel": "Mail तयार किंवा संपादित करा",
+        "notFound": "No Mail found"
+      },
+      "created": "Mail [identifier: {{ param }}] तयार आहे",
+      "updated": "Mail [identifier: {{ param }}] सुधारित केले आहे",
+      "deleted": "Mail [identifier: {{ param }}] हटविले आहे",
+      "delete": {
+        "question": "Mail [id: {{ id }}] काढून टाकण्याबाबत पुष्टी?"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}

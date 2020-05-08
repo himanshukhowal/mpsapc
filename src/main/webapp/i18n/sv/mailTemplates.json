@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Skapa en ny Mail Templates",
+        "createOrEditLabel": "Skapa eller ändra en Mail Templates",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "En ny Mail Templates är skapad med id {{ param }}",
+      "updated": "En Mail Templates är uppdaterad med id  {{ param }}",
+      "deleted": "En Mail Templates är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Mail Templates {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

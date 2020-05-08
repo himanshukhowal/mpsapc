@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Lisa uus Mail Templates",
+        "createOrEditLabel": "Lisa või muuda Mail Templates",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Uus Mail Templates on loodud identifikaatoriga {{ param }}",
+      "updated": "Mail Templates identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Mail Templates identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Mail Templates {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

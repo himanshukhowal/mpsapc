@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "Creeare o nouă entitate Mail",
+        "createOrEditLabel": "Creeare sau editare Mail",
+        "notFound": "No Mail found"
+      },
+      "created": "A fost creată o nouă entitate Mail cu identificatorul {{ param }}",
+      "updated": "Mail cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Mail cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Mail {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}

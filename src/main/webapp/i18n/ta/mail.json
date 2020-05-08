@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "Mail-ஐ உருவாக்கு",
+        "createOrEditLabel": "Mail -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Mail found"
+      },
+      "created": "Mail புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Mail மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Mail நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Mail {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}

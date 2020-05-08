@@ -16,6 +16,7 @@
                     <select class="form-control" name="waiverType" formControlName="waiverType" id="field_waiverType">
                         <option value="Country">{{ 'mpsapcApp.WaiverType.Country' | translate }}</option>
                         <option value="Institute">{{ 'mpsapcApp.WaiverType.Institute' | translate }}</option>
+                        <option value="Journal">{{ 'mpsapcApp.WaiverType.Journal' | translate }}</option>
                     </select>
                     <div *ngIf="editForm.get('waiverType')!.invalid && (editForm.get('waiverType')!.dirty || editForm.get('waiverType')!.touched)">
                         <small class="form-text text-danger"

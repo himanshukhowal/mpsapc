@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Criar novo(a) Mail Templates",
+        "createOrEditLabel": "Criar ou editar Mail Templates",
+        "notFound": "Nenhum Mail Templates encontrado"
+      },
+      "created": "Um novo Mail Templates foi criado com o identificador {{ param }}",
+      "updated": "Mail Templates com identificador {{ param }} foi actualizado",
+      "deleted": "Mail Templates com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Mail Templates {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

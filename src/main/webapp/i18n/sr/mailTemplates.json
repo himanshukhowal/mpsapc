@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Kreiraj novi Mail Templates",
+        "createOrEditLabel": "Kreirajte ili izmenite Mail Templates",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Kreiran je novi Mail Templates pod nazivom {{ param }}",
+      "updated": "Mail Templates pod nazivom {{ param }} je ažuriran",
+      "deleted": "Mail Templates pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Mail Templates pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Krijo një të ri Mail Templates",
+        "createOrEditLabel": "Krijo ose përpuno një Mail Templates",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Një Mail Templates i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Mail Templates u përpunua me identifikues {{ param }}",
+      "deleted": "Një Mail Templates u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Mail Templates {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

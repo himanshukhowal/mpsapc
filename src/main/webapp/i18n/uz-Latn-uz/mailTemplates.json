@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Yangi Mail Templates qo`shish",
+        "createOrEditLabel": "Mail Templatesni tahrirlash",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Mail Templates {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Mail Templates saqlandi",
+      "deleted": "{{ param }}- Mail Templates o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Mail Templatesni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

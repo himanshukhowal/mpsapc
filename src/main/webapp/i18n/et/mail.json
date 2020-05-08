@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "Lisa uus Mail",
+        "createOrEditLabel": "Lisa või muuda Mail",
+        "notFound": "No Mail found"
+      },
+      "created": "Uus Mail on loodud identifikaatoriga {{ param }}",
+      "updated": "Mail identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Mail identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Mail {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}

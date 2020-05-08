@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "Dodaj Mail",
+        "createOrEditLabel": "Dodaj lub edytuj: Mail",
+        "notFound": "No Mail found"
+      },
+      "created": "Utworzono nowy obiekt typu Mail z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Mail z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Mail z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Mail {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}

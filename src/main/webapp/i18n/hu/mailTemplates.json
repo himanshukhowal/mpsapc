@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "MailTemplates",
+        "createLabel": "Egy új Mail Templates létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Mail Templatest",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Egy új Mail Templates lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Mail Templates módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Mail Templates törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Mail Templatest {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

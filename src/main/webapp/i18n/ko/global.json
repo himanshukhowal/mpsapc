@@ -14,6 +14,8 @@
         "contactUs": "Contact Us",
         "author": "Author",
         "payment": "Payment",
+        "mail": "Mail",
+        "mailTemplates": "Mail Templates",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

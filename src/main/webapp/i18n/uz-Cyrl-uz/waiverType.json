@@ -3,7 +3,8 @@
     "WaiverType": {
       "null": "",
       "Country": "Country",
-      "Institute": "Institute"
+      "Institute": "Institute",
+      "Journal": "Journal"
     }
   }
 }
