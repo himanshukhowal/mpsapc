@@ -1,0 +1,32 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "Skapa en ny Author",
+        "createOrEditLabel": "Skapa eller ändra en Author",
+        "notFound": "No Authors found"
+      },
+      "created": "En ny Author är skapad med id {{ param }}",
+      "updated": "En Author är uppdaterad med id  {{ param }}",
+      "deleted": "En Author är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Author {{ id }}?"
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "firstName": "First Name"
+    }
+  }
+}

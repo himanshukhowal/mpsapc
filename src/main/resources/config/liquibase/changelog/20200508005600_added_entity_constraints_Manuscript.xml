@@ -14,5 +14,11 @@
                                  referencedColumnNames="id"
                                  referencedTableName="journal"/>
 
+        <addForeignKeyConstraint baseColumnNames="manuscript_author_name_id"
+                                 baseTableName="manuscript"
+                                 constraintName="fk_manuscript_manuscript_author_name_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="author"/>
+
     </changeSet>
 </databaseChangeLog>

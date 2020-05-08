@@ -19,6 +19,8 @@
       "discountType": "Discount Type",
       "entityName": "Entity Name",
       "amount": "Amount",
+      "dateFrom": "Date From",
+      "dateTo": "Date To",
       "activeStatus": "Active Status",
       "dateCreated": "Date Created",
       "dateModified": "Date Modified"

@@ -34,6 +34,12 @@
                         <a [routerLink]="['/journal', manuscript.manuscriptJournalAcronym?.id, 'view']">{{ manuscript.manuscriptJournalAcronym?.journalAcronym }}</a>
                     </div>
                 </dd>
+                <dt><span jhiTranslate="mpsapcApp.manuscript.manuscriptAuthorName">Manuscript Author Name</span></dt>
+                <dd>
+                    <div *ngIf="manuscript.manuscriptAuthorName">
+                        <a [routerLink]="['/author', manuscript.manuscriptAuthorName?.id, 'view']">{{ manuscript.manuscriptAuthorName?.firstName }}</a>
+                    </div>
+                </dd>
             </dl>
 
             <button type="submit"

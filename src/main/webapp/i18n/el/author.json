@@ -1,0 +1,32 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "Δημιουργήστε ένα νέο Author",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Author",
+        "notFound": "No Authors found"
+      },
+      "created": "Ένα νέο Author έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Author έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Author έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Author {{ id }};"
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "firstName": "First Name"
+    }
+  }
+}

@@ -3,6 +3,7 @@ package com.mps.web.rest;
 import com.mps.MpsapcApp;
 import com.mps.domain.Manuscript;
 import com.mps.domain.Journal;
+import com.mps.domain.Author;
 import com.mps.repository.ManuscriptRepository;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -83,6 +84,16 @@ public class ManuscriptResourceIT {
             journal = TestUtil.findAll(em, Journal.class).get(0);
         }
         manuscript.setManuscriptJournalAcronym(journal);
+        // Add required entity
+        Author author;
+        if (TestUtil.findAll(em, Author.class).isEmpty()) {
+            author = AuthorResourceIT.createEntity(em);
+            em.persist(author);
+            em.flush();
+        } else {
+            author = TestUtil.findAll(em, Author.class).get(0);
+        }
+        manuscript.setManuscriptAuthorName(author);
         return manuscript;
     }
     /**
@@ -108,6 +119,16 @@ public class ManuscriptResourceIT {
             journal = TestUtil.findAll(em, Journal.class).get(0);
         }
         manuscript.setManuscriptJournalAcronym(journal);
+        // Add required entity
+        Author author;
+        if (TestUtil.findAll(em, Author.class).isEmpty()) {
+            author = AuthorResourceIT.createUpdatedEntity(em);
+            em.persist(author);
+            em.flush();
+        } else {
+            author = TestUtil.findAll(em, Author.class).get(0);
+        }
+        manuscript.setManuscriptAuthorName(author);
         return manuscript;
     }
 

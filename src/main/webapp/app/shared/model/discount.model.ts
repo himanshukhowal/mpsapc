@@ -7,6 +7,8 @@ export interface IDiscount {
   discountType?: DiscountType;
   entityName?: string;
   amount?: number;
+  dateFrom?: Moment;
+  dateTo?: Moment;
   activeStatus?: ActiveStatus;
   dateCreated?: Moment;
   dateModified?: Moment;
@@ -18,6 +20,8 @@ export class Discount implements IDiscount {
     public discountType?: DiscountType,
     public entityName?: string,
     public amount?: number,
+    public dateFrom?: Moment,
+    public dateTo?: Moment,
     public activeStatus?: ActiveStatus,
     public dateCreated?: Moment,
     public dateModified?: Moment

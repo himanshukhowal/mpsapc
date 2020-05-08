@@ -24,6 +24,14 @@
             ]
         },
         {
+            "fieldName": "dateFrom",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateTo",
+            "fieldType": "LocalDate"
+        },
+        {
             "fieldName": "activeStatus",
             "fieldType": "ActiveStatus",
             "fieldValues": "Active,Inactive",

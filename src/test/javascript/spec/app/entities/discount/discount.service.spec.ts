@@ -26,13 +26,25 @@ describe('Service Tests', () => {
       httpMock = injector.get(HttpTestingController);
       currentDate = moment();
 
-      elemDefault = new Discount(0, DiscountType.Journal, 'AAAAAAA', 0, ActiveStatus.Active, currentDate, currentDate);
+      elemDefault = new Discount(
+        0,
+        DiscountType.Journal,
+        'AAAAAAA',
+        0,
+        currentDate,
+        currentDate,
+        ActiveStatus.Active,
+        currentDate,
+        currentDate
+      );
     });
 
     describe('Service methods', () => {
       it('should find an element', () => {
         const returnedFromService = Object.assign(
           {
+            dateFrom: currentDate.format(DATE_FORMAT),
+            dateTo: currentDate.format(DATE_FORMAT),
             dateCreated: currentDate.format(DATE_FORMAT),
             dateModified: currentDate.format(DATE_FORMAT)
           },
@@ -50,6 +62,8 @@ describe('Service Tests', () => {
         const returnedFromService = Object.assign(
           {
             id: 0,
+            dateFrom: currentDate.format(DATE_FORMAT),
+            dateTo: currentDate.format(DATE_FORMAT),
             dateCreated: currentDate.format(DATE_FORMAT),
             dateModified: currentDate.format(DATE_FORMAT)
           },
@@ -58,6 +72,8 @@ describe('Service Tests', () => {
 
         const expected = Object.assign(
           {
+            dateFrom: currentDate,
+            dateTo: currentDate,
             dateCreated: currentDate,
             dateModified: currentDate
           },
@@ -77,6 +93,8 @@ describe('Service Tests', () => {
             discountType: 'BBBBBB',
             entityName: 'BBBBBB',
             amount: 1,
+            dateFrom: currentDate.format(DATE_FORMAT),
+            dateTo: currentDate.format(DATE_FORMAT),
             activeStatus: 'BBBBBB',
             dateCreated: currentDate.format(DATE_FORMAT),
             dateModified: currentDate.format(DATE_FORMAT)
@@ -86,6 +104,8 @@ describe('Service Tests', () => {
 
         const expected = Object.assign(
           {
+            dateFrom: currentDate,
+            dateTo: currentDate,
             dateCreated: currentDate,
             dateModified: currentDate
           },
@@ -105,6 +125,8 @@ describe('Service Tests', () => {
             discountType: 'BBBBBB',
             entityName: 'BBBBBB',
             amount: 1,
+            dateFrom: currentDate.format(DATE_FORMAT),
+            dateTo: currentDate.format(DATE_FORMAT),
             activeStatus: 'BBBBBB',
             dateCreated: currentDate.format(DATE_FORMAT),
             dateModified: currentDate.format(DATE_FORMAT)
@@ -114,6 +136,8 @@ describe('Service Tests', () => {
 
         const expected = Object.assign(
           {
+            dateFrom: currentDate,
+            dateTo: currentDate,
             dateCreated: currentDate,
             dateModified: currentDate
           },

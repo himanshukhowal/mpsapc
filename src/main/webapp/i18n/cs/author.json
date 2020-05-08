@@ -1,0 +1,32 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "Vytvořit Author",
+        "createOrEditLabel": "Vytvořit nebo upravit Author",
+        "notFound": "No Authors found"
+      },
+      "created": "Byl vytvořen potomek entity Author s identifikátorem {{ param }}",
+      "updated": "Potomek entity Author s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Author s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Author {{ id }}?"
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "firstName": "First Name"
+    }
+  }
+}

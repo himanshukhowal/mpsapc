@@ -55,6 +55,26 @@
                 </div>
 
                 <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.discount.dateFrom" for="field_dateFrom">Date From</label>
+                    <div class="input-group">
+                        <input id="field_dateFrom" type="text" class="form-control" name="dateFrom" ngbDatepicker #dateFromDp="ngbDatepicker" formControlName="dateFrom"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="dateFromDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.discount.dateTo" for="field_dateTo">Date To</label>
+                    <div class="input-group">
+                        <input id="field_dateTo" type="text" class="form-control" name="dateTo" ngbDatepicker #dateToDp="ngbDatepicker" formControlName="dateTo"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="dateToDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
                     <label class="form-control-label" jhiTranslate="mpsapcApp.discount.activeStatus" for="field_activeStatus">Active Status</label>
                     <select class="form-control" name="activeStatus" formControlName="activeStatus" id="field_activeStatus">
                         <option value="Active">{{ 'mpsapcApp.ActiveStatus.Active' | translate }}</option>

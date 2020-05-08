@@ -85,6 +85,20 @@
                         This field is required.
                     </small>
                 </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.manuscript.manuscriptAuthorName" for="field_manuscriptAuthorName">Manuscript Author Name</label>
+                    <select class="form-control" id="field_manuscriptAuthorName" name="manuscriptAuthorName" formControlName="manuscriptAuthorName">
+                        <option *ngIf="!editForm.get('manuscriptAuthorName')!.value" [ngValue]="null" selected></option>
+                        <option [ngValue]="authorOption.id === editForm.get('manuscriptAuthorName')!.value?.id ? editForm.get('manuscriptAuthorName')!.value : authorOption" *ngFor="let authorOption of authors; trackBy: trackById">{{ authorOption.firstName }}</option>
+                    </select>
+                </div>
+                <div *ngIf="editForm.get('manuscriptAuthorName')!.invalid && (editForm.get('manuscriptAuthorName')!.dirty || editForm.get('manuscriptAuthorName')!.touched)">
+                    <small class="form-text text-danger"
+                           *ngIf="editForm.get('manuscriptAuthorName')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                    </small>
+                </div>
             </div>
 
             <div>

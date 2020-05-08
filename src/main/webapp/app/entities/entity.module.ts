@@ -23,6 +23,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'contact-us',
         loadChildren: () => import('./contact-us/contact-us.module').then(m => m.MpsapcContactUsModule)
+      },
+      {
+        path: 'author',
+        loadChildren: () => import('./author/author.module').then(m => m.MpsapcAuthorModule)
       }
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ])

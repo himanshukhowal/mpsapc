@@ -51,6 +51,8 @@ export class DiscountService {
 
   protected convertDateFromClient(discount: IDiscount): IDiscount {
     const copy: IDiscount = Object.assign({}, discount, {
+      dateFrom: discount.dateFrom && discount.dateFrom.isValid() ? discount.dateFrom.format(DATE_FORMAT) : undefined,
+      dateTo: discount.dateTo && discount.dateTo.isValid() ? discount.dateTo.format(DATE_FORMAT) : undefined,
       dateCreated: discount.dateCreated && discount.dateCreated.isValid() ? discount.dateCreated.format(DATE_FORMAT) : undefined,
       dateModified: discount.dateModified && discount.dateModified.isValid() ? discount.dateModified.format(DATE_FORMAT) : undefined
     });
@@ -59,6 +61,8 @@ export class DiscountService {
 
   protected convertDateFromServer(res: EntityResponseType): EntityResponseType {
     if (res.body) {
+      res.body.dateFrom = res.body.dateFrom ? moment(res.body.dateFrom) : undefined;
+      res.body.dateTo = res.body.dateTo ? moment(res.body.dateTo) : undefined;
       res.body.dateCreated = res.body.dateCreated ? moment(res.body.dateCreated) : undefined;
       res.body.dateModified = res.body.dateModified ? moment(res.body.dateModified) : undefined;
     }
@@ -68,6 +72,8 @@ export class DiscountService {
   protected convertDateArrayFromServer(res: EntityArrayResponseType): EntityArrayResponseType {
     if (res.body) {
       res.body.forEach((discount: IDiscount) => {
+        discount.dateFrom = discount.dateFrom ? moment(discount.dateFrom) : undefined;
+        discount.dateTo = discount.dateTo ? moment(discount.dateTo) : undefined;
         discount.dateCreated = discount.dateCreated ? moment(discount.dateCreated) : undefined;
         discount.dateModified = discount.dateModified ? moment(discount.dateModified) : undefined;
       });

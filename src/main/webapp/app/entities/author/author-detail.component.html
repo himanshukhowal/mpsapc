@@ -1,0 +1,66 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="author">
+            <h2><span jhiTranslate="mpsapcApp.author.detail.title">Author</span> {{ author.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="mpsapcApp.author.firstName">First Name</span></dt>
+                <dd>
+                    <span>{{ author.firstName }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.author.middleName">Middle Name</span></dt>
+                <dd>
+                    <span>{{ author.middleName }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.author.lastName">Last Name</span></dt>
+                <dd>
+                    <span>{{ author.lastName }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.author.email">Email</span></dt>
+                <dd>
+                    <span>{{ author.email }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.author.address">Address</span></dt>
+                <dd>
+                    <span>{{ author.address }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.author.city">City</span></dt>
+                <dd>
+                    <span>{{ author.city }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.author.state">State</span></dt>
+                <dd>
+                    <span>{{ author.state }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.author.country">Country</span></dt>
+                <dd>
+                    <span>{{ author.country }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.author.institute">Institute</span></dt>
+                <dd>
+                    <span>{{ author.institute }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.author.designation">Designation</span></dt>
+                <dd>
+                    <span>{{ author.designation }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/author', author.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

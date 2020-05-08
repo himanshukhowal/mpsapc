@@ -43,6 +43,12 @@ public class DiscountResourceIT {
     private static final Integer DEFAULT_AMOUNT = 1;
     private static final Integer UPDATED_AMOUNT = 2;
 
+    private static final LocalDate DEFAULT_DATE_FROM = LocalDate.ofEpochDay(0L);
+    private static final LocalDate UPDATED_DATE_FROM = LocalDate.now(ZoneId.systemDefault());
+
+    private static final LocalDate DEFAULT_DATE_TO = LocalDate.ofEpochDay(0L);
+    private static final LocalDate UPDATED_DATE_TO = LocalDate.now(ZoneId.systemDefault());
+
     private static final ActiveStatus DEFAULT_ACTIVE_STATUS = ActiveStatus.Active;
     private static final ActiveStatus UPDATED_ACTIVE_STATUS = ActiveStatus.Inactive;
 
@@ -74,6 +80,8 @@ public class DiscountResourceIT {
             .discountType(DEFAULT_DISCOUNT_TYPE)
             .entityName(DEFAULT_ENTITY_NAME)
             .amount(DEFAULT_AMOUNT)
+            .dateFrom(DEFAULT_DATE_FROM)
+            .dateTo(DEFAULT_DATE_TO)
             .activeStatus(DEFAULT_ACTIVE_STATUS)
             .dateCreated(DEFAULT_DATE_CREATED)
             .dateModified(DEFAULT_DATE_MODIFIED);
@@ -90,6 +98,8 @@ public class DiscountResourceIT {
             .discountType(UPDATED_DISCOUNT_TYPE)
             .entityName(UPDATED_ENTITY_NAME)
             .amount(UPDATED_AMOUNT)
+            .dateFrom(UPDATED_DATE_FROM)
+            .dateTo(UPDATED_DATE_TO)
             .activeStatus(UPDATED_ACTIVE_STATUS)
             .dateCreated(UPDATED_DATE_CREATED)
             .dateModified(UPDATED_DATE_MODIFIED);
@@ -119,6 +129,8 @@ public class DiscountResourceIT {
         assertThat(testDiscount.getDiscountType()).isEqualTo(DEFAULT_DISCOUNT_TYPE);
         assertThat(testDiscount.getEntityName()).isEqualTo(DEFAULT_ENTITY_NAME);
         assertThat(testDiscount.getAmount()).isEqualTo(DEFAULT_AMOUNT);
+        assertThat(testDiscount.getDateFrom()).isEqualTo(DEFAULT_DATE_FROM);
+        assertThat(testDiscount.getDateTo()).isEqualTo(DEFAULT_DATE_TO);
         assertThat(testDiscount.getActiveStatus()).isEqualTo(DEFAULT_ACTIVE_STATUS);
         assertThat(testDiscount.getDateCreated()).isEqualTo(DEFAULT_DATE_CREATED);
         assertThat(testDiscount.getDateModified()).isEqualTo(DEFAULT_DATE_MODIFIED);
@@ -230,6 +242,8 @@ public class DiscountResourceIT {
             .andExpect(jsonPath("$.[*].discountType").value(hasItem(DEFAULT_DISCOUNT_TYPE.toString())))
             .andExpect(jsonPath("$.[*].entityName").value(hasItem(DEFAULT_ENTITY_NAME)))
             .andExpect(jsonPath("$.[*].amount").value(hasItem(DEFAULT_AMOUNT)))
+            .andExpect(jsonPath("$.[*].dateFrom").value(hasItem(DEFAULT_DATE_FROM.toString())))
+            .andExpect(jsonPath("$.[*].dateTo").value(hasItem(DEFAULT_DATE_TO.toString())))
             .andExpect(jsonPath("$.[*].activeStatus").value(hasItem(DEFAULT_ACTIVE_STATUS.toString())))
             .andExpect(jsonPath("$.[*].dateCreated").value(hasItem(DEFAULT_DATE_CREATED.toString())))
             .andExpect(jsonPath("$.[*].dateModified").value(hasItem(DEFAULT_DATE_MODIFIED.toString())));
@@ -249,6 +263,8 @@ public class DiscountResourceIT {
             .andExpect(jsonPath("$.discountType").value(DEFAULT_DISCOUNT_TYPE.toString()))
             .andExpect(jsonPath("$.entityName").value(DEFAULT_ENTITY_NAME))
             .andExpect(jsonPath("$.amount").value(DEFAULT_AMOUNT))
+            .andExpect(jsonPath("$.dateFrom").value(DEFAULT_DATE_FROM.toString()))
+            .andExpect(jsonPath("$.dateTo").value(DEFAULT_DATE_TO.toString()))
             .andExpect(jsonPath("$.activeStatus").value(DEFAULT_ACTIVE_STATUS.toString()))
             .andExpect(jsonPath("$.dateCreated").value(DEFAULT_DATE_CREATED.toString()))
             .andExpect(jsonPath("$.dateModified").value(DEFAULT_DATE_MODIFIED.toString()));
@@ -278,6 +294,8 @@ public class DiscountResourceIT {
             .discountType(UPDATED_DISCOUNT_TYPE)
             .entityName(UPDATED_ENTITY_NAME)
             .amount(UPDATED_AMOUNT)
+            .dateFrom(UPDATED_DATE_FROM)
+            .dateTo(UPDATED_DATE_TO)
             .activeStatus(UPDATED_ACTIVE_STATUS)
             .dateCreated(UPDATED_DATE_CREATED)
             .dateModified(UPDATED_DATE_MODIFIED);
@@ -294,6 +312,8 @@ public class DiscountResourceIT {
         assertThat(testDiscount.getDiscountType()).isEqualTo(UPDATED_DISCOUNT_TYPE);
         assertThat(testDiscount.getEntityName()).isEqualTo(UPDATED_ENTITY_NAME);
         assertThat(testDiscount.getAmount()).isEqualTo(UPDATED_AMOUNT);
+        assertThat(testDiscount.getDateFrom()).isEqualTo(UPDATED_DATE_FROM);
+        assertThat(testDiscount.getDateTo()).isEqualTo(UPDATED_DATE_TO);
         assertThat(testDiscount.getActiveStatus()).isEqualTo(UPDATED_ACTIVE_STATUS);
         assertThat(testDiscount.getDateCreated()).isEqualTo(UPDATED_DATE_CREATED);
         assertThat(testDiscount.getDateModified()).isEqualTo(UPDATED_DATE_MODIFIED);

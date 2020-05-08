@@ -21,7 +21,8 @@
       "apcStatus": "Apc Status",
       "dateCreated": "Date Created",
       "dateModified": "Date Modified",
-      "manuscriptJournalAcronym": "Manuscript Journal Acronym"
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym",
+      "manuscriptAuthorName": "Manuscript Author Name"
     }
   }
 }

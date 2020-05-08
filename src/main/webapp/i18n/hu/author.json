@@ -1,0 +1,32 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "Egy új Author létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Authort",
+        "notFound": "No Authors found"
+      },
+      "created": "Egy új Author lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Author módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Author törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Authort {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "firstName": "First Name"
+    }
+  }
+}

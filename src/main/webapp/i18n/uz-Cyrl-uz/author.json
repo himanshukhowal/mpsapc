@@ -1,0 +1,32 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "Янги Author қўшиш",
+        "createOrEditLabel": "Authorни таҳрирлаш",
+        "notFound": "No Authors found"
+      },
+      "created": "Author {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Author сақланди.",
+      "deleted": "{{ param }}- Author ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Authorни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "firstName": "First Name"
+    }
+  }
+}

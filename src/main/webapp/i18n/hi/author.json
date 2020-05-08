@@ -1,0 +1,32 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "नया Author बनाएँ",
+        "createOrEditLabel": "Author बनाएँ या संपादित करें",
+        "notFound": "No Authors found"
+      },
+      "created": "एक नया Author [identifier: {{ param }}] तैयार है",
+      "updated": "एक Author [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Author [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Author [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "firstName": "First Name"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { Moment } from 'moment';
 import { IJournal } from 'app/shared/model/journal.model';
+import { IAuthor } from 'app/shared/model/author.model';
 import { APCStatus } from 'app/shared/model/enumerations/apc-status.model';
 
 export interface IManuscript {
@@ -10,6 +11,7 @@ export interface IManuscript {
   dateCreated?: Moment;
   dateModified?: Moment;
   manuscriptJournalAcronym?: IJournal;
+  manuscriptAuthorName?: IAuthor;
 }
 
 export class Manuscript implements IManuscript {
@@ -20,6 +22,7 @@ export class Manuscript implements IManuscript {
     public apcStatus?: APCStatus,
     public dateCreated?: Moment,
     public dateModified?: Moment,
-    public manuscriptJournalAcronym?: IJournal
+    public manuscriptJournalAcronym?: IJournal,
+    public manuscriptAuthorName?: IAuthor
   ) {}
 }

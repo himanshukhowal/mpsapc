@@ -30,6 +30,19 @@ entity Manuscript{
     dateModified LocalDate
 }
 
+entity Author{
+	firstName String required,
+    middleName String,
+    lastName String,
+    email String required,
+    address String,
+    city String,
+    state String,
+    country String required,
+    institute String,
+    designation String
+}
+
 entity Waiver{
 	waiverType WaiverType required,
     entityName String required,
@@ -42,6 +55,8 @@ entity Discount{
 	discountType DiscountType required,
     entityName String required,
     amount Integer required,
+    dateFrom LocalDate,
+    dateTo LocalDate,
     activeStatus ActiveStatus required,
     dateCreated LocalDate,
     dateModified LocalDate
@@ -58,4 +73,5 @@ entity ContactUs{
 
 relationship OneToMany{
 	Journal {journalAcronym required} to Manuscript{manuscriptJournalAcronym(journalAcronym) required},
+    Author {firstName required} to Manuscript{manuscriptAuthorName(firstName) required}
 }

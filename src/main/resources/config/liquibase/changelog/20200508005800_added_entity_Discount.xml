@@ -25,6 +25,12 @@
             <column name="amount" type="integer">
                 <constraints nullable="false" />
             </column>
+            <column name="date_from" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="date_to" type="date">
+                <constraints nullable="true" />
+            </column>
             <column name="active_status" type="varchar(255)">
                 <constraints nullable="false" />
             </column>
@@ -60,6 +66,8 @@
             <column name="discount_type" type="string"/>
             <column name="entity_name" type="string"/>
             <column name="amount" type="numeric"/>
+            <column name="date_from" type="date"/>
+            <column name="date_to" type="date"/>
             <column name="active_status" type="string"/>
             <column name="date_created" type="date"/>
             <column name="date_modified" type="date"/>

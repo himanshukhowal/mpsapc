@@ -51,6 +51,11 @@ public class Manuscript implements Serializable {
     @JsonIgnoreProperties("journalAcronyms")
     private Journal manuscriptJournalAcronym;
 
+    @ManyToOne(optional = false)
+    @NotNull
+    @JsonIgnoreProperties("firstNames")
+    private Author manuscriptAuthorName;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
         return id;
@@ -136,6 +141,19 @@ public class Manuscript implements Serializable {
 
     public void setManuscriptJournalAcronym(Journal journal) {
         this.manuscriptJournalAcronym = journal;
+    }
+
+    public Author getManuscriptAuthorName() {
+        return manuscriptAuthorName;
+    }
+
+    public Manuscript manuscriptAuthorName(Author author) {
+        this.manuscriptAuthorName = author;
+        return this;
+    }
+
+    public void setManuscriptAuthorName(Author author) {
+        this.manuscriptAuthorName = author;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
 

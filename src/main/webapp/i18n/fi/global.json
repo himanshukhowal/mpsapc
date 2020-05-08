@@ -12,6 +12,7 @@
         "waiver": "Waiver",
         "discount": "Discount",
         "contactUs": "Contact Us",
+        "author": "Author",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

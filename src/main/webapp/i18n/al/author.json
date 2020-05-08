@@ -1,0 +1,32 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "Krijo një të ri Author",
+        "createOrEditLabel": "Krijo ose përpuno një Author",
+        "notFound": "No Authors found"
+      },
+      "created": "Një Author i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Author u përpunua me identifikues {{ param }}",
+      "deleted": "Një Author u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Author {{ id }}?"
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "firstName": "First Name"
+    }
+  }
+}

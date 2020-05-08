@@ -26,6 +26,8 @@
                     <th scope="col" ><span jhiTranslate="mpsapcApp.discount.discountType">Discount Type</span></th>
                     <th scope="col" ><span jhiTranslate="mpsapcApp.discount.entityName">Entity Name</span></th>
                     <th scope="col" ><span jhiTranslate="mpsapcApp.discount.amount">Amount</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.dateFrom">Date From</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.dateTo">Date To</span></th>
                     <th scope="col" ><span jhiTranslate="mpsapcApp.discount.activeStatus">Active Status</span></th>
                     <th scope="col" ><span jhiTranslate="mpsapcApp.discount.dateCreated">Date Created</span></th>
                     <th scope="col" ><span jhiTranslate="mpsapcApp.discount.dateModified">Date Modified</span></th>
@@ -38,6 +40,8 @@
                     <td jhiTranslate="{{ 'mpsapcApp.DiscountType.' + discount.discountType }}">{{ discount.discountType }}</td>
                     <td>{{ discount.entityName }}</td>
                     <td>{{ discount.amount }}</td>
+                    <td>{{ discount.dateFrom | date:'mediumDate' }}</td>
+                    <td>{{ discount.dateTo | date:'mediumDate' }}</td>
                     <td jhiTranslate="{{ 'mpsapcApp.ActiveStatus.' + discount.activeStatus }}">{{ discount.activeStatus }}</td>
                     <td>{{ discount.dateCreated | date:'mediumDate' }}</td>
                     <td>{{ discount.dateModified | date:'mediumDate' }}</td>

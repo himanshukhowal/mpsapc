@@ -40,6 +40,14 @@
             "relationshipValidateRules": "required",
             "relationshipName": "manuscriptJournalAcronym",
             "otherEntityField": "journalAcronym"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "author",
+            "otherEntityRelationshipName": "firstName",
+            "relationshipValidateRules": "required",
+            "relationshipName": "manuscriptAuthorName",
+            "otherEntityField": "firstName"
         }
     ],
     "changelogDate": "20200508005600",

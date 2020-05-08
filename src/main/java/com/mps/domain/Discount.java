@@ -41,6 +41,12 @@ public class Discount implements Serializable {
     @Column(name = "amount", nullable = false)
     private Integer amount;
 
+    @Column(name = "date_from")
+    private LocalDate dateFrom;
+
+    @Column(name = "date_to")
+    private LocalDate dateTo;
+
     @NotNull
     @Enumerated(EnumType.STRING)
     @Column(name = "active_status", nullable = false)
@@ -98,6 +104,32 @@ public class Discount implements Serializable {
 
     public void setAmount(Integer amount) {
         this.amount = amount;
+    }
+
+    public LocalDate getDateFrom() {
+        return dateFrom;
+    }
+
+    public Discount dateFrom(LocalDate dateFrom) {
+        this.dateFrom = dateFrom;
+        return this;
+    }
+
+    public void setDateFrom(LocalDate dateFrom) {
+        this.dateFrom = dateFrom;
+    }
+
+    public LocalDate getDateTo() {
+        return dateTo;
+    }
+
+    public Discount dateTo(LocalDate dateTo) {
+        this.dateTo = dateTo;
+        return this;
+    }
+
+    public void setDateTo(LocalDate dateTo) {
+        this.dateTo = dateTo;
     }
 
     public ActiveStatus getActiveStatus() {
@@ -163,6 +195,8 @@ public class Discount implements Serializable {
             ", discountType='" + getDiscountType() + "'" +
             ", entityName='" + getEntityName() + "'" +
             ", amount=" + getAmount() +
+            ", dateFrom='" + getDateFrom() + "'" +
+            ", dateTo='" + getDateTo() + "'" +
             ", activeStatus='" + getActiveStatus() + "'" +
             ", dateCreated='" + getDateCreated() + "'" +
             ", dateModified='" + getDateModified() + "'" +

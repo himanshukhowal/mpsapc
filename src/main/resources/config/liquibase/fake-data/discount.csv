@@ -1,11 +1,11 @@
-id;discount_type;entity_name;amount;active_status;date_created;date_modified
-1;Journal;harness Generic;15664;Active;2020-05-07;2020-05-07
-2;Institute;primary firmware methodical;50537;Inactive;2020-05-07;2020-05-07
-3;Institute;Handcrafted Granite Shirt;43105;Inactive;2020-05-08;2020-05-07
-4;Institute;platforms parse Dynamic;44202;Inactive;2020-05-07;2020-05-07
-5;Journal;content Tasty Fresh Fish Buckinghamshire;23486;Inactive;2020-05-07;2020-05-07
-6;Journal;Home Loan Account utilisation;76652;Active;2020-05-07;2020-05-07
-7;Institute;Universal Factors Soft;94971;Inactive;2020-05-07;2020-05-07
-8;Country;Incredible Soft Salad Borders Generic Cotton Bike;31235;Inactive;2020-05-07;2020-05-07
-9;Institute;Group help-desk conglomeration;13389;Active;2020-05-07;2020-05-07
-10;Journal;portals Architect;62031;Inactive;2020-05-07;2020-05-07
+id;discount_type;entity_name;amount;date_from;date_to;active_status;date_created;date_modified
+1;Journal;harness Generic;15664;2020-05-07;2020-05-07;Active;2020-05-07;2020-05-07
+2;Institute;firmware;26429;2020-05-07;2020-05-07;Inactive;2020-05-07;2020-05-07
+3;Institute;Handcrafted Granite Shirt;43105;2020-05-07;2020-05-07;Inactive;2020-05-07;2020-05-07
+4;Country;Rustic mobile;50216;2020-05-07;2020-05-07;Active;2020-05-07;2020-05-07
+5;Journal;Mouse users;60624;2020-05-07;2020-05-07;Active;2020-05-07;2020-05-07
+6;Journal;users Haiti;18508;2020-05-07;2020-05-07;Inactive;2020-05-07;2020-05-07
+7;Country;override hack;52244;2020-05-07;2020-05-07;Active;2020-05-07;2020-05-07
+8;Institute;Croatia;83671;2020-05-07;2020-05-07;Inactive;2020-05-07;2020-05-07
+9;Journal;Assistant Cuban Peso Peso Convertible Licensed;48773;2020-05-07;2020-05-07;Active;2020-05-07;2020-05-07
+10;Journal;XML Vatu;53884;2020-05-07;2020-05-07;Active;2020-05-07;2020-05-07

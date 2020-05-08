@@ -14,6 +14,8 @@ import { DiscountService } from './discount.service';
 })
 export class DiscountUpdateComponent implements OnInit {
   isSaving = false;
+  dateFromDp: any;
+  dateToDp: any;
   dateCreatedDp: any;
   dateModifiedDp: any;
 
@@ -22,6 +24,8 @@ export class DiscountUpdateComponent implements OnInit {
     discountType: [null, [Validators.required]],
     entityName: [null, [Validators.required]],
     amount: [null, [Validators.required]],
+    dateFrom: [],
+    dateTo: [],
     activeStatus: [null, [Validators.required]],
     dateCreated: [],
     dateModified: []
@@ -41,6 +45,8 @@ export class DiscountUpdateComponent implements OnInit {
       discountType: discount.discountType,
       entityName: discount.entityName,
       amount: discount.amount,
+      dateFrom: discount.dateFrom,
+      dateTo: discount.dateTo,
       activeStatus: discount.activeStatus,
       dateCreated: discount.dateCreated,
       dateModified: discount.dateModified
@@ -68,6 +74,8 @@ export class DiscountUpdateComponent implements OnInit {
       discountType: this.editForm.get(['discountType'])!.value,
       entityName: this.editForm.get(['entityName'])!.value,
       amount: this.editForm.get(['amount'])!.value,
+      dateFrom: this.editForm.get(['dateFrom'])!.value,
+      dateTo: this.editForm.get(['dateTo'])!.value,
       activeStatus: this.editForm.get(['activeStatus'])!.value,
       dateCreated: this.editForm.get(['dateCreated'])!.value,
       dateModified: this.editForm.get(['dateModified'])!.value
