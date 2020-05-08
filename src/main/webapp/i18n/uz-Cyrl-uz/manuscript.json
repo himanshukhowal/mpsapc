@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Янги Manuscript қўшиш",
+        "createOrEditLabel": "Manuscriptни таҳрирлаш",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Manuscript {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Manuscript сақланди.",
+      "deleted": "{{ param }}- Manuscript ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Manuscriptни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym"
+    }
+  }
+}

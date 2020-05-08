@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "Pridať Waiver",
+        "createOrEditLabel": "Pridať alebo upraviť Waiver",
+        "notFound": "No Waivers found"
+      },
+      "created": "Bol vytvorený potomok entity Waiver s identifikátorom {{ param }}",
+      "updated": "Potomok entity Waiver s identifikátorom {{ param }} bol upravený.",
+      "deleted": "Potomok entity Waiver s identifikátorom {{ param }} bol vymazaný.",
+      "delete": {
+        "question": "Ste si istý, že chcete vymazať Waiver {{ id }}?"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

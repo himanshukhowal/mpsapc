@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "Створити новий Waiver",
+        "createOrEditLabel": "Створити чи редагувати Waiver",
+        "notFound": "No Waivers found"
+      },
+      "created": "Новий Waiver створений з ідентифікатором {{ param }}",
+      "updated": "Waiver оновлений з ідентифікатором {{ param }}",
+      "deleted": "Waiver видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Waiver {{ id }}?"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

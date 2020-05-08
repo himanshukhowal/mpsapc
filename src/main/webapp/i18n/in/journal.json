@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Buat Journal baru",
+        "createOrEditLabel": "Buat atau edit Journal",
+        "notFound": "No Journals found"
+      },
+      "created": "Journal dengan id {{ param }} telah dibuat",
+      "updated": "Journal dengan id {{ param }} telah diperbaharui",
+      "deleted": "Journal dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Journal {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym"
+    }
+  }
+}

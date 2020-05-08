@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Pridať Journal",
+        "createOrEditLabel": "Pridať alebo upraviť Journal",
+        "notFound": "No Journals found"
+      },
+      "created": "Bol vytvorený potomok entity Journal s identifikátorom {{ param }}",
+      "updated": "Potomok entity Journal s identifikátorom {{ param }} bol upravený.",
+      "deleted": "Potomok entity Journal s identifikátorom {{ param }} bol vymazaný.",
+      "delete": {
+        "question": "Ste si istý, že chcete vymazať Journal {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym"
+    }
+  }
+}

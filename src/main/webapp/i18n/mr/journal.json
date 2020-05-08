@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "नवीन Journal तयार करा",
+        "createOrEditLabel": "Journal तयार किंवा संपादित करा",
+        "notFound": "No Journals found"
+      },
+      "created": "Journal [identifier: {{ param }}] तयार आहे",
+      "updated": "Journal [identifier: {{ param }}] सुधारित केले आहे",
+      "deleted": "Journal [identifier: {{ param }}] हटविले आहे",
+      "delete": {
+        "question": "Journal [id: {{ id }}] काढून टाकण्याबाबत पुष्टी?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym"
+    }
+  }
+}

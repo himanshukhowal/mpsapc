@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "नया Waiver बनाएँ",
+        "createOrEditLabel": "Waiver बनाएँ या संपादित करें",
+        "notFound": "No Waivers found"
+      },
+      "created": "एक नया Waiver [identifier: {{ param }}] तैयार है",
+      "updated": "एक Waiver [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Waiver [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Waiver [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

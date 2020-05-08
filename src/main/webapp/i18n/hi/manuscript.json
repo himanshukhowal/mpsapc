@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "नया Manuscript बनाएँ",
+        "createOrEditLabel": "Manuscript बनाएँ या संपादित करें",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "एक नया Manuscript [identifier: {{ param }}] तैयार है",
+      "updated": "एक Manuscript [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Manuscript [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Manuscript [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym"
+    }
+  }
+}

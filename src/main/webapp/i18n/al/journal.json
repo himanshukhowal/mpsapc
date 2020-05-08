@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Krijo një të ri Journal",
+        "createOrEditLabel": "Krijo ose përpuno një Journal",
+        "notFound": "No Journals found"
+      },
+      "created": "Një Journal i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Journal u përpunua me identifikues {{ param }}",
+      "deleted": "Një Journal u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Journal {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym"
+    }
+  }
+}

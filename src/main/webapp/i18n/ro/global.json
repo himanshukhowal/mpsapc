@@ -10,6 +10,11 @@
         "bankAccount": "ContBancar",
         "label": "Etichetă",
         "operation": "Operație",
+        "journal": "Journal",
+        "manuscript": "Manuscript",
+        "waiver": "Waiver",
+        "discount": "Discount",
+        "contactUs": "Contact Us",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

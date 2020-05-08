@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "Creeare o nouă entitate Waiver",
+        "createOrEditLabel": "Creeare sau editare Waiver",
+        "notFound": "No Waivers found"
+      },
+      "created": "A fost creată o nouă entitate Waiver cu identificatorul {{ param }}",
+      "updated": "Waiver cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Waiver cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Waiver {{ id }}?"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

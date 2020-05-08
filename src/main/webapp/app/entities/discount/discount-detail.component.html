@@ -1,0 +1,50 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="discount">
+            <h2><span jhiTranslate="mpsapcApp.discount.detail.title">Discount</span> {{ discount.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="mpsapcApp.discount.discountType">Discount Type</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'mpsapcApp.DiscountType.' + discount.discountType }}">{{ discount.discountType }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.discount.entityName">Entity Name</span></dt>
+                <dd>
+                    <span>{{ discount.entityName }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.discount.amount">Amount</span></dt>
+                <dd>
+                    <span>{{ discount.amount }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.discount.activeStatus">Active Status</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'mpsapcApp.ActiveStatus.' + discount.activeStatus }}">{{ discount.activeStatus }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.discount.dateCreated">Date Created</span></dt>
+                <dd>
+                    <span>{{ discount.dateCreated }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.discount.dateModified">Date Modified</span></dt>
+                <dd>
+                    <span>{{ discount.dateModified }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/discount', discount.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

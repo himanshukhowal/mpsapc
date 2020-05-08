@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Янги Discount қўшиш",
+        "createOrEditLabel": "Discountни таҳрирлаш",
+        "notFound": "No Discounts found"
+      },
+      "created": "Discount {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Discount сақланди.",
+      "deleted": "{{ param }}- Discount ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Discountни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

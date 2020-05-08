@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Thêm mới một Journal",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Journal",
+        "notFound": "No Journals found"
+      },
+      "created": "Một Journal mới được tạo với định danh {{ param }}",
+      "updated": "Một Journal cập nhật với định danh {{ param }}",
+      "deleted": "Một Journal đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Journal {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym"
+    }
+  }
+}

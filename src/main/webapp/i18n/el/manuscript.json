@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Δημιουργήστε ένα νέο Manuscript",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Ένα νέο Manuscript έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Manuscript έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Manuscript έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Manuscript {{ id }};"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym"
+    }
+  }
+}

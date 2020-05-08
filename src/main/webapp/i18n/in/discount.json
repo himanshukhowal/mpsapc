@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Buat Discount baru",
+        "createOrEditLabel": "Buat atau edit Discount",
+        "notFound": "No Discounts found"
+      },
+      "created": "Discount dengan id {{ param }} telah dibuat",
+      "updated": "Discount dengan id {{ param }} telah diperbaharui",
+      "deleted": "Discount dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Discount {{ id }}?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

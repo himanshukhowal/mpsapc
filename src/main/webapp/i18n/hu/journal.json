@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Egy új Journal létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Journalt",
+        "notFound": "No Journals found"
+      },
+      "created": "Egy új Journal lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Journal módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Journal törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Journalt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym"
+    }
+  }
+}

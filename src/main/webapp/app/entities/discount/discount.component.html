@@ -1,0 +1,71 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="mpsapcApp.discount.home.title">Discounts</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-discount" [routerLink]="['/discount/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="mpsapcApp.discount.home.createLabel">
+            Create a new Discount
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="discounts?.length === 0">
+        <span jhiTranslate="mpsapcApp.discount.home.notFound">No discounts found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="discounts?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.discountType">Discount Type</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.entityName">Entity Name</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.amount">Amount</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.activeStatus">Active Status</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.dateCreated">Date Created</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.dateModified">Date Modified</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let discount of discounts ;trackBy: trackId">
+                    <td><a [routerLink]="['/discount', discount.id, 'view']">{{ discount.id }}</a></td>
+                    <td jhiTranslate="{{ 'mpsapcApp.DiscountType.' + discount.discountType }}">{{ discount.discountType }}</td>
+                    <td>{{ discount.entityName }}</td>
+                    <td>{{ discount.amount }}</td>
+                    <td jhiTranslate="{{ 'mpsapcApp.ActiveStatus.' + discount.activeStatus }}">{{ discount.activeStatus }}</td>
+                    <td>{{ discount.dateCreated | date:'mediumDate' }}</td>
+                    <td>{{ discount.dateModified | date:'mediumDate' }}</td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/discount', discount.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/discount', discount.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(discount)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

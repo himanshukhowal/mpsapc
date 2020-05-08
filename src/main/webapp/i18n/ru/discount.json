@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Создать новый Discount",
+        "createOrEditLabel": "Создать или отредактировать Discount",
+        "notFound": "No Discounts found"
+      },
+      "created": "Новый Discount создан с идентификатором {{ param }}",
+      "updated": "Discount обновлен с идентификатором {{ param }}",
+      "deleted": "Discount удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Discount {{ id }}?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

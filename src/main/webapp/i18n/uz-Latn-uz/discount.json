@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Yangi Discount qo`shish",
+        "createOrEditLabel": "Discountni tahrirlash",
+        "notFound": "No Discounts found"
+      },
+      "created": "Discount {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Discount saqlandi",
+      "deleted": "{{ param }}- Discount o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Discountni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

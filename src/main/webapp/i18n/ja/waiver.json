@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "Waiver を追加",
+        "createOrEditLabel": "Waiverを追加または編集",
+        "notFound": "No Waivers found"
+      },
+      "created": "A new Waiver is created with identifier {{ param }}",
+      "updated": "A Waiver is updated with identifier {{ param }}",
+      "deleted": "A Waiver is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Waiver {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

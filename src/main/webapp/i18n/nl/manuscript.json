@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Maak een nieuwe Manuscript",
+        "createOrEditLabel": "Maak of wijzig een Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "A new Manuscript is created with identifier {{ param }}",
+      "updated": "A Manuscript is updated with identifier {{ param }}",
+      "deleted": "A Manuscript is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Manuscript {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym"
+    }
+  }
+}

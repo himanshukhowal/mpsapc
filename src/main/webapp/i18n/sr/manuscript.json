@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Kreiraj novi Manuscript",
+        "createOrEditLabel": "Kreirajte ili izmenite Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Kreiran je novi Manuscript pod nazivom {{ param }}",
+      "updated": "Manuscript pod nazivom {{ param }} je ažuriran",
+      "deleted": "Manuscript pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Manuscript pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym"
+    }
+  }
+}

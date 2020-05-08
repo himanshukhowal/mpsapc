@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "नवीन Discount तयार करा",
+        "createOrEditLabel": "Discount तयार किंवा संपादित करा",
+        "notFound": "No Discounts found"
+      },
+      "created": "Discount [identifier: {{ param }}] तयार आहे",
+      "updated": "Discount [identifier: {{ param }}] सुधारित केले आहे",
+      "deleted": "Discount [identifier: {{ param }}] हटविले आहे",
+      "delete": {
+        "question": "Discount [id: {{ id }}] काढून टाकण्याबाबत पुष्टी?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

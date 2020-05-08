@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "创建新 Waiver",
+        "createOrEditLabel": "创建或编辑 Waiver",
+        "notFound": "No Waivers found"
+      },
+      "created": "Waiver {{ param }} 创建成功",
+      "updated": "Waiver {{ param }} 更新成功",
+      "deleted": "Waiver {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Waiver {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

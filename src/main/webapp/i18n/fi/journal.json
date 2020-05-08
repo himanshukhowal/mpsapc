@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Luo Journal",
+        "createOrEditLabel": "Luo tai muokkaa Journal",
+        "notFound": "Journal ei löytynyt"
+      },
+      "created": "Uusi Journal on luotu, id: {{ param }}",
+      "updated": "Journal on päivitetty, id: {{ param }}",
+      "deleted": "Journal on päivitetty, id: {{ param }}",
+      "delete": {
+        "question": "Haluatko varmasti poistaa Journal {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Manuscript-ஐ உருவாக்கு",
+        "createOrEditLabel": "Manuscript -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Manuscript புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Manuscript மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Manuscript நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Manuscript {{ id }}?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym"
+    }
+  }
+}

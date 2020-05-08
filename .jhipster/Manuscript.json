@@ -1,0 +1,56 @@
+{
+    "name": "Manuscript",
+    "fields": [
+        {
+            "fieldName": "manuscriptId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "manuscriptTitle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "apcStatus",
+            "fieldType": "APCStatus",
+            "fieldValues": "Initiated,Pending,Completed,RefundInitiated,Refunded",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "journal",
+            "otherEntityRelationshipName": "journalAcronym",
+            "relationshipValidateRules": "required",
+            "relationshipName": "manuscriptJournalAcronym",
+            "otherEntityField": "journalAcronym"
+        }
+    ],
+    "changelogDate": "20200508005600",
+    "entityTableName": "manuscript",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,46 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="waiver">
+            <h2><span jhiTranslate="mpsapcApp.waiver.detail.title">Waiver</span> {{ waiver.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="mpsapcApp.waiver.waiverType">Waiver Type</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'mpsapcApp.WaiverType.' + waiver.waiverType }}">{{ waiver.waiverType }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.waiver.entityName">Entity Name</span></dt>
+                <dd>
+                    <span>{{ waiver.entityName }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.waiver.activeStatus">Active Status</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'mpsapcApp.ActiveStatus.' + waiver.activeStatus }}">{{ waiver.activeStatus }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.waiver.dateCreated">Date Created</span></dt>
+                <dd>
+                    <span>{{ waiver.dateCreated }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.waiver.dateModified">Date Modified</span></dt>
+                <dd>
+                    <span>{{ waiver.dateModified }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/waiver', waiver.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

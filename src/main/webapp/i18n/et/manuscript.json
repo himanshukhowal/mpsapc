@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Lisa uus Manuscript",
+        "createOrEditLabel": "Lisa või muuda Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Uus Manuscript on loodud identifikaatoriga {{ param }}",
+      "updated": "Manuscript identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Manuscript identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Manuscript {{ id }}?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym"
+    }
+  }
+}

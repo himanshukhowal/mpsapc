@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "建立一筆新的 Waiver",
+        "createOrEditLabel": "建立或編輯 Waiver",
+        "notFound": "No Waivers found"
+      },
+      "created": "新的 Waiver 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 Waiver 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 Waiver 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Waiver {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

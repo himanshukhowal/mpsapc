@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "కొత్త Discount  సృష్టించండి",
+        "createOrEditLabel": "Discount సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Discounts found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Discount సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Discount సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Discount తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Discount {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

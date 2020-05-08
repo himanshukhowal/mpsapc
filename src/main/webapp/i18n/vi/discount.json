@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Thêm mới một Discount",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Discount",
+        "notFound": "No Discounts found"
+      },
+      "created": "Một Discount mới được tạo với định danh {{ param }}",
+      "updated": "Một Discount cập nhật với định danh {{ param }}",
+      "deleted": "Một Discount đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Discount {{ id }}?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

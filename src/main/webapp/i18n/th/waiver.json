@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "สร้าง Waiver",
+        "createOrEditLabel": "สร้างหรือแก้ไข Waiver",
+        "notFound": "No Waivers found"
+      },
+      "created": "Waiver ถูกสร้างด้วย {{ param }}",
+      "updated": "Waiver ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Waiver ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Waiver {{ id }}?"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

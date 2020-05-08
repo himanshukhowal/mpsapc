@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Krijo një të ri Contact Us",
+        "createOrEditLabel": "Krijo ose përpuno një Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Një Contact Us i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Contact Us u përpunua me identifikues {{ param }}",
+      "deleted": "Një Contact Us u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Contact Us {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Vytvořit Discount",
+        "createOrEditLabel": "Vytvořit nebo upravit Discount",
+        "notFound": "No Discounts found"
+      },
+      "created": "Byl vytvořen potomek entity Discount s identifikátorem {{ param }}",
+      "updated": "Potomek entity Discount s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Discount s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Discount {{ id }}?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

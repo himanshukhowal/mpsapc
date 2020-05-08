@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "Янги Waiver қўшиш",
+        "createOrEditLabel": "Waiverни таҳрирлаш",
+        "notFound": "No Waivers found"
+      },
+      "created": "Waiver {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Waiver сақланди.",
+      "deleted": "{{ param }}- Waiver ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Waiverни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

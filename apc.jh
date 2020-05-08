@@ -1,0 +1,61 @@
+enum ActiveStatus{
+	Active, Inactive
+}
+
+enum APCStatus{
+	Initiated, Pending, Completed, RefundInitiated, Refunded
+}
+
+enum WaiverType{
+	Country, Institute
+}
+
+enum DiscountType{
+	Journal, Country, Institute
+}
+
+entity Journal{
+	journalAcronym String required,
+	journalTitle String required,
+    activeStatus ActiveStatus required,
+    dateCreated LocalDate,
+    dateModified LocalDate
+}
+
+entity Manuscript{
+	manuscriptId String required,
+    manuscriptTitle String required,
+    apcStatus APCStatus required,
+    dateCreated LocalDate,
+    dateModified LocalDate
+}
+
+entity Waiver{
+	waiverType WaiverType required,
+    entityName String required,
+    activeStatus ActiveStatus required,
+    dateCreated LocalDate,
+    dateModified LocalDate
+}
+
+entity Discount{
+	discountType DiscountType required,
+    entityName String required,
+    amount Integer required,
+    activeStatus ActiveStatus required,
+    dateCreated LocalDate,
+    dateModified LocalDate
+}
+
+entity ContactUs{
+	name String required,
+	email String required,
+	contact Integer required,
+	message String required, 
+	dateAdded LocalDate,
+	dateModified LocalDate
+}
+
+relationship OneToMany{
+	Journal {journalAcronym required} to Manuscript{manuscriptJournalAcronym(journalAcronym) required},
+}

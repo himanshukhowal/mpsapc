@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Egy új Manuscript létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Manuscriptt",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Egy új Manuscript lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Manuscript módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Manuscript törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Manuscriptt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym"
+    }
+  }
+}

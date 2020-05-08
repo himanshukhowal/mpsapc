@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "नवीन Contact Us तयार करा",
+        "createOrEditLabel": "Contact Us तयार किंवा संपादित करा",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Contact Us [identifier: {{ param }}] तयार आहे",
+      "updated": "Contact Us [identifier: {{ param }}] सुधारित केले आहे",
+      "deleted": "Contact Us [identifier: {{ param }}] हटविले आहे",
+      "delete": {
+        "question": "Contact Us [id: {{ id }}] काढून टाकण्याबाबत पुष्टी?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-manuscript-heading" jhiTranslate="mpsapcApp.manuscript.home.createOrEditLabel">Create or edit a Manuscript</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.manuscript.manuscriptId" for="field_manuscriptId">Manuscript Id</label>
+                    <input type="text" class="form-control" name="manuscriptId" id="field_manuscriptId"
+                           formControlName="manuscriptId"/>
+                    <div *ngIf="editForm.get('manuscriptId')!.invalid && (editForm.get('manuscriptId')!.dirty || editForm.get('manuscriptId')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('manuscriptId')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.manuscript.manuscriptTitle" for="field_manuscriptTitle">Manuscript Title</label>
+                    <input type="text" class="form-control" name="manuscriptTitle" id="field_manuscriptTitle"
+                           formControlName="manuscriptTitle"/>
+                    <div *ngIf="editForm.get('manuscriptTitle')!.invalid && (editForm.get('manuscriptTitle')!.dirty || editForm.get('manuscriptTitle')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('manuscriptTitle')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.manuscript.apcStatus" for="field_apcStatus">Apc Status</label>
+                    <select class="form-control" name="apcStatus" formControlName="apcStatus" id="field_apcStatus">
+                        <option value="Initiated">{{ 'mpsapcApp.APCStatus.Initiated' | translate }}</option>
+                        <option value="Pending">{{ 'mpsapcApp.APCStatus.Pending' | translate }}</option>
+                        <option value="Completed">{{ 'mpsapcApp.APCStatus.Completed' | translate }}</option>
+                        <option value="RefundInitiated">{{ 'mpsapcApp.APCStatus.RefundInitiated' | translate }}</option>
+                        <option value="Refunded">{{ 'mpsapcApp.APCStatus.Refunded' | translate }}</option>
+                    </select>
+                    <div *ngIf="editForm.get('apcStatus')!.invalid && (editForm.get('apcStatus')!.dirty || editForm.get('apcStatus')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('apcStatus')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.manuscript.dateCreated" for="field_dateCreated">Date Created</label>
+                    <div class="input-group">
+                        <input id="field_dateCreated" type="text" class="form-control" name="dateCreated" ngbDatepicker #dateCreatedDp="ngbDatepicker" formControlName="dateCreated"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="dateCreatedDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.manuscript.dateModified" for="field_dateModified">Date Modified</label>
+                    <div class="input-group">
+                        <input id="field_dateModified" type="text" class="form-control" name="dateModified" ngbDatepicker #dateModifiedDp="ngbDatepicker" formControlName="dateModified"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="dateModifiedDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.manuscript.manuscriptJournalAcronym" for="field_manuscriptJournalAcronym">Manuscript Journal Acronym</label>
+                    <select class="form-control" id="field_manuscriptJournalAcronym" name="manuscriptJournalAcronym" formControlName="manuscriptJournalAcronym">
+                        <option *ngIf="!editForm.get('manuscriptJournalAcronym')!.value" [ngValue]="null" selected></option>
+                        <option [ngValue]="journalOption.id === editForm.get('manuscriptJournalAcronym')!.value?.id ? editForm.get('manuscriptJournalAcronym')!.value : journalOption" *ngFor="let journalOption of journals; trackBy: trackById">{{ journalOption.journalAcronym }}</option>
+                    </select>
+                </div>
+                <div *ngIf="editForm.get('manuscriptJournalAcronym')!.invalid && (editForm.get('manuscriptJournalAcronym')!.dirty || editForm.get('manuscriptJournalAcronym')!.touched)">
+                    <small class="form-text text-danger"
+                           *ngIf="editForm.get('manuscriptJournalAcronym')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                    </small>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

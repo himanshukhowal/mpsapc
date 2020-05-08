@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Egy új Contact Us létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Contact Ust",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Egy új Contact Us lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Contact Us módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Contact Us törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Contact Ust {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

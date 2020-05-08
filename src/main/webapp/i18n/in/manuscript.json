@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Buat Manuscript baru",
+        "createOrEditLabel": "Buat atau edit Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Manuscript dengan id {{ param }} telah dibuat",
+      "updated": "Manuscript dengan id {{ param }} telah diperbaharui",
+      "deleted": "Manuscript dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Manuscript {{ id }}?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym"
+    }
+  }
+}

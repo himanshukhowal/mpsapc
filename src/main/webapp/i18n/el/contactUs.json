@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Δημιουργήστε ένα νέο Contact Us",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Ένα νέο Contact Us έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Contact Us έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Contact Us έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Contact Us {{ id }};"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "Buat Waiver baru",
+        "createOrEditLabel": "Buat atau edit Waiver",
+        "notFound": "No Waivers found"
+      },
+      "created": "Waiver dengan id {{ param }} telah dibuat",
+      "updated": "Waiver dengan id {{ param }} telah diperbaharui",
+      "deleted": "Waiver dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Waiver {{ id }}?"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

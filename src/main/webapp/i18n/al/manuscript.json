@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Krijo një të ri Manuscript",
+        "createOrEditLabel": "Krijo ose përpuno një Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Një Manuscript i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Manuscript u përpunua me identifikues {{ param }}",
+      "deleted": "Një Manuscript u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Manuscript {{ id }}?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym"
+    }
+  }
+}

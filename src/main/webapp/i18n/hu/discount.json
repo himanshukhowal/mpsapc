@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Egy új Discount létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Discountt",
+        "notFound": "No Discounts found"
+      },
+      "created": "Egy új Discount lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Discount módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Discount törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Discountt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Стварыць новы Manuscript",
+        "createOrEditLabel": "Стварыць або адрэдагаваць Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Новы Manuscript створан з ідэнтыфікатарам {{ param }}",
+      "updated": "Manuscript абноўлен з ідэнтыфікатарам {{ param }}",
+      "deleted": "Manuscript выдален з ідэнтыфікатарам {{ param }}",
+      "delete": {
+        "question": "Вы ўпэўнены, што жадаеце выдаліць Manuscript {{ id }}?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Créer un nouveau Journal",
+        "createOrEditLabel": "Créer ou éditer un Journal",
+        "notFound": "Aucun Journal trouvé"
+      },
+      "created": "Un nouveau Journal a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Journal avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Journal avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Journal {{ id }} ?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym"
+    }
+  }
+}

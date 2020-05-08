@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Kreiraj novi Contact Us",
+        "createOrEditLabel": "Kreirajte ili izmenite Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Kreiran je novi Contact Us pod nazivom {{ param }}",
+      "updated": "Contact Us pod nazivom {{ param }} je ažuriran",
+      "deleted": "Contact Us pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Contact Us pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

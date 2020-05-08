@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Lisa uus Discount",
+        "createOrEditLabel": "Lisa või muuda Discount",
+        "notFound": "No Discounts found"
+      },
+      "created": "Uus Discount on loodud identifikaatoriga {{ param }}",
+      "updated": "Discount identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Discount identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Discount {{ id }}?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}
