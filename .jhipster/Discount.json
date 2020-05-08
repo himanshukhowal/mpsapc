@@ -52,7 +52,7 @@
     "changelogDate": "20200508005800",
     "entityTableName": "discount",
     "dto": "no",
-    "pagination": "no",
+    "pagination": "pagination",
     "service": "no",
     "jpaMetamodelFiltering": false,
     "fluentMethods": true,

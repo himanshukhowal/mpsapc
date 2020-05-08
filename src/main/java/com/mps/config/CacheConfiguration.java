@@ -53,6 +53,7 @@ public class CacheConfiguration {
             createCache(cm, com.mps.domain.ContactUs.class.getName());
             createCache(cm, com.mps.domain.Author.class.getName());
             createCache(cm, com.mps.domain.Author.class.getName() + ".firstNames");
+            createCache(cm, com.mps.domain.Payment.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

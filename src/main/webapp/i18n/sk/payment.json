@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Pridať Payment",
+        "createOrEditLabel": "Pridať alebo upraviť Payment",
+        "notFound": "No Payments found"
+      },
+      "created": "Bol vytvorený potomok entity Payment s identifikátorom {{ param }}",
+      "updated": "Potomok entity Payment s identifikátorom {{ param }} bol upravený.",
+      "deleted": "Potomok entity Payment s identifikátorom {{ param }} bol vymazaný.",
+      "delete": {
+        "question": "Ste si istý, že chcete vymazať Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

@@ -21,6 +21,7 @@
       "apcStatus": "Apc Status",
       "dateCreated": "Date Created",
       "dateModified": "Date Modified",
+      "linkedPayment": "Linked Payment",
       "manuscriptJournalAcronym": "Manuscript Journal Acronym",
       "manuscriptAuthorName": "Manuscript Author Name"
     }

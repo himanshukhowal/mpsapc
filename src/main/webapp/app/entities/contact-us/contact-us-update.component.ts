@@ -20,7 +20,7 @@ export class ContactUsUpdateComponent implements OnInit {
   editForm = this.fb.group({
     id: [],
     name: [null, [Validators.required]],
-    email: [null, [Validators.required]],
+    email: [null, [Validators.required, Validators.pattern('^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$')]],
     contact: [null, [Validators.required]],
     message: [null, [Validators.required]],
     dateAdded: [],

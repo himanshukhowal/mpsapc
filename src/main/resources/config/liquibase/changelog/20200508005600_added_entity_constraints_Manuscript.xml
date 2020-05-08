@@ -8,6 +8,12 @@
     -->
     <changeSet id="20200508005600-2" author="jhipster">
         
+        <addForeignKeyConstraint baseColumnNames="linked_payment_id"
+                                 baseTableName="manuscript"
+                                 constraintName="fk_manuscript_linked_payment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="payment"/>
+
         <addForeignKeyConstraint baseColumnNames="manuscript_journal_acronym_id"
                                  baseTableName="manuscript"
                                  constraintName="fk_manuscript_manuscript_journal_acronym_id"

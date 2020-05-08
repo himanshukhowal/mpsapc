@@ -5,10 +5,16 @@ import com.mps.repository.WaiverRepository;
 import com.mps.web.rest.errors.BadRequestAlertException;
 
 import io.github.jhipster.web.util.HeaderUtil;
+import io.github.jhipster.web.util.PaginationUtil;
 import io.github.jhipster.web.util.ResponseUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -83,12 +89,15 @@ public class WaiverResource {
     /**
      * {@code GET  /waivers} : get all the waivers.
      *
+     * @param pageable the pagination information.
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the list of waivers in body.
      */
     @GetMapping("/waivers")
-    public List<Waiver> getAllWaivers() {
-        log.debug("REST request to get all Waivers");
-        return waiverRepository.findAll();
+    public ResponseEntity<List<Waiver>> getAllWaivers(Pageable pageable) {
+        log.debug("REST request to get a page of Waivers");
+        Page<Waiver> page = waiverRepository.findAll(pageable);
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(ServletUriComponentsBuilder.fromCurrentRequest(), page);
+        return ResponseEntity.ok().headers(headers).body(page.getContent());
     }
 
     /**

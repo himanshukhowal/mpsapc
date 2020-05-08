@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Ստեղծել նոր Payment",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Payment",
+        "notFound": "No Payments found"
+      },
+      "created": "Նոր Payment ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Payment թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Payment հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

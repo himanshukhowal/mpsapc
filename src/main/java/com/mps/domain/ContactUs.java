@@ -29,6 +29,7 @@ public class ContactUs implements Serializable {
     private String name;
 
     @NotNull
+    @Pattern(regexp = "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$")
     @Column(name = "email", nullable = false)
     private String email;
 

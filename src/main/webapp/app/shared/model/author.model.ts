@@ -1,4 +1,5 @@
 import { IManuscript } from 'app/shared/model/manuscript.model';
+import { ActiveStatus } from 'app/shared/model/enumerations/active-status.model';
 
 export interface IAuthor {
   id?: number;
@@ -12,6 +13,7 @@ export interface IAuthor {
   country?: string;
   institute?: string;
   designation?: string;
+  activeStatus?: ActiveStatus;
   firstNames?: IManuscript[];
 }
 
@@ -28,6 +30,7 @@ export class Author implements IAuthor {
     public country?: string,
     public institute?: string,
     public designation?: string,
+    public activeStatus?: ActiveStatus,
     public firstNames?: IManuscript[]
   ) {}
 }

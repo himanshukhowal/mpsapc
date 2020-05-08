@@ -20,13 +20,14 @@ export class AuthorUpdateComponent implements OnInit {
     firstName: [null, [Validators.required]],
     middleName: [],
     lastName: [],
-    email: [null, [Validators.required]],
+    email: [null, [Validators.required, Validators.pattern('^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$')]],
     address: [],
     city: [],
     state: [],
     country: [null, [Validators.required]],
     institute: [],
-    designation: []
+    designation: [],
+    activeStatus: [null, [Validators.required]]
   });
 
   constructor(protected authorService: AuthorService, protected activatedRoute: ActivatedRoute, private fb: FormBuilder) {}
@@ -49,7 +50,8 @@ export class AuthorUpdateComponent implements OnInit {
       state: author.state,
       country: author.country,
       institute: author.institute,
-      designation: author.designation
+      designation: author.designation,
+      activeStatus: author.activeStatus
     });
   }
 
@@ -80,7 +82,8 @@ export class AuthorUpdateComponent implements OnInit {
       state: this.editForm.get(['state'])!.value,
       country: this.editForm.get(['country'])!.value,
       institute: this.editForm.get(['institute'])!.value,
-      designation: this.editForm.get(['designation'])!.value
+      designation: this.editForm.get(['designation'])!.value,
+      activeStatus: this.editForm.get(['activeStatus'])!.value
     };
   }
 

@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Egy új Payment létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Paymentt",
+        "notFound": "No Payments found"
+      },
+      "created": "Egy új Payment lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Payment módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Payment törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Paymentt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

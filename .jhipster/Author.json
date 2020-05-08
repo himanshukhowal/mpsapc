@@ -20,8 +20,10 @@
             "fieldName": "email",
             "fieldType": "String",
             "fieldValidateRules": [
-                "required"
-            ]
+                "required",
+                "pattern"
+            ],
+            "fieldValidateRulesPattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
         },
         {
             "fieldName": "address",
@@ -49,6 +51,14 @@
         {
             "fieldName": "designation",
             "fieldType": "String"
+        },
+        {
+            "fieldName": "activeStatus",
+            "fieldType": "ActiveStatus",
+            "fieldValues": "Active,Inactive",
+            "fieldValidateRules": [
+                "required"
+            ]
         }
     ],
     "relationships": [
@@ -63,7 +73,7 @@
     "changelogDate": "20200508014900",
     "entityTableName": "author",
     "dto": "no",
-    "pagination": "no",
+    "pagination": "pagination",
     "service": "no",
     "jpaMetamodelFiltering": false,
     "fluentMethods": true,

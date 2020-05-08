@@ -21,15 +21,16 @@
     <div class="table-responsive" id="entities" *ngIf="manuscripts?.length > 0">
         <table class="table table-striped" aria-describedby="page-heading">
             <thead>
-                <tr>
-                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.manuscript.manuscriptId">Manuscript Id</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.manuscript.manuscriptTitle">Manuscript Title</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.manuscript.apcStatus">Apc Status</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.manuscript.dateCreated">Date Created</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.manuscript.dateModified">Date Modified</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.manuscript.manuscriptJournalAcronym">Manuscript Journal Acronym</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.manuscript.manuscriptAuthorName">Manuscript Author Name</span></th>
+                <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
+                    <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="manuscriptId"><span jhiTranslate="mpsapcApp.manuscript.manuscriptId">Manuscript Id</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="manuscriptTitle"><span jhiTranslate="mpsapcApp.manuscript.manuscriptTitle">Manuscript Title</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="apcStatus"><span jhiTranslate="mpsapcApp.manuscript.apcStatus">Apc Status</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="dateCreated"><span jhiTranslate="mpsapcApp.manuscript.dateCreated">Date Created</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="dateModified"><span jhiTranslate="mpsapcApp.manuscript.dateModified">Date Modified</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="linkedPayment.id"><span jhiTranslate="mpsapcApp.manuscript.linkedPayment">Linked Payment</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="manuscriptJournalAcronym.journalAcronym"><span jhiTranslate="mpsapcApp.manuscript.manuscriptJournalAcronym">Manuscript Journal Acronym</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="manuscriptAuthorName.firstName"><span jhiTranslate="mpsapcApp.manuscript.manuscriptAuthorName">Manuscript Author Name</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -41,6 +42,11 @@
                     <td jhiTranslate="{{ 'mpsapcApp.APCStatus.' + manuscript.apcStatus }}">{{ manuscript.apcStatus }}</td>
                     <td>{{ manuscript.dateCreated | date:'mediumDate' }}</td>
                     <td>{{ manuscript.dateModified | date:'mediumDate' }}</td>
+                    <td>
+                        <div *ngIf="manuscript.linkedPayment">
+                            <a [routerLink]="['/payment', manuscript.linkedPayment?.id, 'view']" >{{ manuscript.linkedPayment?.id }}</a>
+                        </div>
+                    </td>
                     <td>
                         <div *ngIf="manuscript.manuscriptJournalAcronym">
                             <a [routerLink]="['/journal', manuscript.manuscriptJournalAcronym?.id, 'view']" >{{ manuscript.manuscriptJournalAcronym?.journalAcronym }}</a>
@@ -77,5 +83,15 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+
+    <div *ngIf="manuscripts?.length > 0">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="ngbPaginationPage" [pageSize]="itemsPerPage" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage($event)"></ngb-pagination>
+        </div>
     </div>
 </div>

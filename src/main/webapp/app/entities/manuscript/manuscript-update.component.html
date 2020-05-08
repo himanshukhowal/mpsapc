@@ -73,6 +73,20 @@
                 </div>
 
                 <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.manuscript.linkedPayment" for="field_linkedPayment">Linked Payment</label>
+                    <select class="form-control" id="field_linkedPayment" name="linkedPayment" formControlName="linkedPayment">
+                        <option *ngIf="!editForm.get('linkedPayment')!.value" [ngValue]="null" selected></option>
+                        <option [ngValue]="paymentOption.id === editForm.get('linkedPayment')!.value?.id ? editForm.get('linkedPayment')!.value : paymentOption" *ngFor="let paymentOption of linkedpayments; trackBy: trackById">{{ paymentOption.id }}</option>
+                    </select>
+                </div>
+                <div *ngIf="editForm.get('linkedPayment')!.invalid && (editForm.get('linkedPayment')!.dirty || editForm.get('linkedPayment')!.touched)">
+                    <small class="form-text text-danger"
+                           *ngIf="editForm.get('linkedPayment')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                    </small>
+                </div>
+
+                <div class="form-group">
                     <label class="form-control-label" jhiTranslate="mpsapcApp.manuscript.manuscriptJournalAcronym" for="field_manuscriptJournalAcronym">Manuscript Journal Acronym</label>
                     <select class="form-control" id="field_manuscriptJournalAcronym" name="manuscriptJournalAcronym" formControlName="manuscriptJournalAcronym">
                         <option *ngIf="!editForm.get('manuscriptJournalAcronym')!.value" [ngValue]="null" selected></option>

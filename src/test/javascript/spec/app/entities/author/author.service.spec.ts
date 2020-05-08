@@ -2,6 +2,7 @@ import { TestBed, getTestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { AuthorService } from 'app/entities/author/author.service';
 import { IAuthor, Author } from 'app/shared/model/author.model';
+import { ActiveStatus } from 'app/shared/model/enumerations/active-status.model';
 
 describe('Service Tests', () => {
   describe('Author Service', () => {
@@ -31,7 +32,8 @@ describe('Service Tests', () => {
         'AAAAAAA',
         'AAAAAAA',
         'AAAAAAA',
-        'AAAAAAA'
+        'AAAAAAA',
+        ActiveStatus.Active
       );
     });
 
@@ -75,7 +77,8 @@ describe('Service Tests', () => {
             state: 'BBBBBB',
             country: 'BBBBBB',
             institute: 'BBBBBB',
-            designation: 'BBBBBB'
+            designation: 'BBBBBB',
+            activeStatus: 'BBBBBB'
           },
           elemDefault
         );
@@ -101,7 +104,8 @@ describe('Service Tests', () => {
             state: 'BBBBBB',
             country: 'BBBBBB',
             institute: 'BBBBBB',
-            designation: 'BBBBBB'
+            designation: 'BBBBBB',
+            activeStatus: 'BBBBBB'
           },
           elemDefault
         );

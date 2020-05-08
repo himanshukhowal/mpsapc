@@ -46,6 +46,11 @@ public class Manuscript implements Serializable {
     @Column(name = "date_modified")
     private LocalDate dateModified;
 
+    @OneToOne(optional = false)
+    @NotNull
+    @JoinColumn(unique = true)
+    private Payment linkedPayment;
+
     @ManyToOne(optional = false)
     @NotNull
     @JsonIgnoreProperties("journalAcronyms")
@@ -128,6 +133,19 @@ public class Manuscript implements Serializable {
 
     public void setDateModified(LocalDate dateModified) {
         this.dateModified = dateModified;
+    }
+
+    public Payment getLinkedPayment() {
+        return linkedPayment;
+    }
+
+    public Manuscript linkedPayment(Payment payment) {
+        this.linkedPayment = payment;
+        return this;
+    }
+
+    public void setLinkedPayment(Payment payment) {
+        this.linkedPayment = payment;
     }
 
     public Journal getManuscriptJournalAcronym() {

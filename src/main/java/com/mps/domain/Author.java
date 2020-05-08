@@ -11,6 +11,8 @@ import java.util.Objects;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.mps.domain.enumeration.ActiveStatus;
+
 /**
  * A Author.
  */
@@ -36,6 +38,7 @@ public class Author implements Serializable {
     private String lastName;
 
     @NotNull
+    @Pattern(regexp = "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$")
     @Column(name = "email", nullable = false)
     private String email;
 
@@ -57,6 +60,11 @@ public class Author implements Serializable {
 
     @Column(name = "designation")
     private String designation;
+
+    @NotNull
+    @Enumerated(EnumType.STRING)
+    @Column(name = "active_status", nullable = false)
+    private ActiveStatus activeStatus;
 
     @OneToMany(mappedBy = "manuscriptAuthorName")
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
@@ -201,6 +209,19 @@ public class Author implements Serializable {
         this.designation = designation;
     }
 
+    public ActiveStatus getActiveStatus() {
+        return activeStatus;
+    }
+
+    public Author activeStatus(ActiveStatus activeStatus) {
+        this.activeStatus = activeStatus;
+        return this;
+    }
+
+    public void setActiveStatus(ActiveStatus activeStatus) {
+        this.activeStatus = activeStatus;
+    }
+
     public Set<Manuscript> getFirstNames() {
         return firstNames;
     }
@@ -257,6 +278,7 @@ public class Author implements Serializable {
             ", country='" + getCountry() + "'" +
             ", institute='" + getInstitute() + "'" +
             ", designation='" + getDesignation() + "'" +
+            ", activeStatus='" + getActiveStatus() + "'" +
             "}";
     }
 }

@@ -34,6 +34,15 @@
     ],
     "relationships": [
         {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "payment",
+            "otherEntityRelationshipName": "manuscript",
+            "relationshipValidateRules": "required",
+            "relationshipName": "linkedPayment",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
             "relationshipType": "many-to-one",
             "otherEntityName": "journal",
             "otherEntityRelationshipName": "journalAcronym",
@@ -53,7 +62,7 @@
     "changelogDate": "20200508005600",
     "entityTableName": "manuscript",
     "dto": "no",
-    "pagination": "no",
+    "pagination": "pagination",
     "service": "no",
     "jpaMetamodelFiltering": false,
     "fluentMethods": true,

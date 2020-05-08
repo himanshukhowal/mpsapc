@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Lisa uus Payment",
+        "createOrEditLabel": "Lisa või muuda Payment",
+        "notFound": "No Payments found"
+      },
+      "created": "Uus Payment on loodud identifikaatoriga {{ param }}",
+      "updated": "Payment identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Payment identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

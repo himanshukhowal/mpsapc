@@ -13,6 +13,7 @@
         "discount": "Discount",
         "contactUs": "Contact Us",
         "author": "Author",
+        "payment": "Payment",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

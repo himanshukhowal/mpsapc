@@ -7,7 +7,7 @@ enum APCStatus{
 }
 
 enum WaiverType{
-	Country, Institute
+	Country, Institute, Journal
 }
 
 enum DiscountType{
@@ -22,6 +22,8 @@ entity Journal{
     dateModified LocalDate
 }
 
+paginate Journal with pagination
+
 entity Manuscript{
 	manuscriptId String required,
     manuscriptTitle String required,
@@ -30,18 +32,23 @@ entity Manuscript{
     dateModified LocalDate
 }
 
+paginate Manuscript with pagination
+
 entity Author{
 	firstName String required,
     middleName String,
     lastName String,
-    email String required,
+    email String required pattern(/^[^@\s]+@[^@\s]+\.[^@\s]+$/),
     address String,
     city String,
     state String,
     country String required,
     institute String,
-    designation String
+    designation String,
+    activeStatus ActiveStatus required,
 }
+
+paginate Author with pagination
 
 entity Waiver{
 	waiverType WaiverType required,
@@ -50,6 +57,8 @@ entity Waiver{
     dateCreated LocalDate,
     dateModified LocalDate
 }
+
+paginate Waiver with pagination
 
 entity Discount{
 	discountType DiscountType required,
@@ -62,9 +71,20 @@ entity Discount{
     dateModified LocalDate
 }
 
+paginate Discount with pagination
+
+entity Payment{
+	currency String required,
+    amount BigDecimal required min(0),
+    dateCreated LocalDate,
+    dateModified LocalDate
+}
+
+paginate Payment with pagination
+
 entity ContactUs{
 	name String required,
-	email String required,
+	email String required pattern(/^[^@\s]+@[^@\s]+\.[^@\s]+$/),
 	contact Integer required,
 	message String required, 
 	dateAdded LocalDate,
@@ -74,4 +94,8 @@ entity ContactUs{
 relationship OneToMany{
 	Journal {journalAcronym required} to Manuscript{manuscriptJournalAcronym(journalAcronym) required},
     Author {firstName required} to Manuscript{manuscriptAuthorName(firstName) required}
+}
+
+relationship OneToOne{
+	Manuscript{linkedPayment required} to Payment
 }

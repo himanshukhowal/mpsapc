@@ -1,10 +1,13 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { HttpResponse } from '@angular/common/http';
+import { HttpHeaders, HttpResponse } from '@angular/common/http';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { JhiEventManager } from 'ng-jhipster';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { IWaiver } from 'app/shared/model/waiver.model';
+
+import { ITEMS_PER_PAGE } from 'app/shared/constants/pagination.constants';
 import { WaiverService } from './waiver.service';
 import { WaiverDeleteDialogComponent } from './waiver-delete-dialog.component';
 
@@ -15,15 +18,44 @@ import { WaiverDeleteDialogComponent } from './waiver-delete-dialog.component';
 export class WaiverComponent implements OnInit, OnDestroy {
   waivers?: IWaiver[];
   eventSubscriber?: Subscription;
+  totalItems = 0;
+  itemsPerPage = ITEMS_PER_PAGE;
+  page!: number;
+  predicate!: string;
+  ascending!: boolean;
+  ngbPaginationPage = 1;
 
-  constructor(protected waiverService: WaiverService, protected eventManager: JhiEventManager, protected modalService: NgbModal) {}
+  constructor(
+    protected waiverService: WaiverService,
+    protected activatedRoute: ActivatedRoute,
+    protected router: Router,
+    protected eventManager: JhiEventManager,
+    protected modalService: NgbModal
+  ) {}
 
-  loadAll(): void {
-    this.waiverService.query().subscribe((res: HttpResponse<IWaiver[]>) => (this.waivers = res.body || []));
+  loadPage(page?: number): void {
+    const pageToLoad: number = page || this.page;
+
+    this.waiverService
+      .query({
+        page: pageToLoad - 1,
+        size: this.itemsPerPage,
+        sort: this.sort()
+      })
+      .subscribe(
+        (res: HttpResponse<IWaiver[]>) => this.onSuccess(res.body, res.headers, pageToLoad),
+        () => this.onError()
+      );
   }
 
   ngOnInit(): void {
-    this.loadAll();
+    this.activatedRoute.data.subscribe(data => {
+      this.page = data.pagingParams.page;
+      this.ascending = data.pagingParams.ascending;
+      this.predicate = data.pagingParams.predicate;
+      this.ngbPaginationPage = data.pagingParams.page;
+      this.loadPage();
+    });
     this.registerChangeInWaivers();
   }
 
@@ -39,11 +71,36 @@ export class WaiverComponent implements OnInit, OnDestroy {
   }
 
   registerChangeInWaivers(): void {
-    this.eventSubscriber = this.eventManager.subscribe('waiverListModification', () => this.loadAll());
+    this.eventSubscriber = this.eventManager.subscribe('waiverListModification', () => this.loadPage());
   }
 
   delete(waiver: IWaiver): void {
     const modalRef = this.modalService.open(WaiverDeleteDialogComponent, { size: 'lg', backdrop: 'static' });
     modalRef.componentInstance.waiver = waiver;
+  }
+
+  sort(): string[] {
+    const result = [this.predicate + ',' + (this.ascending ? 'asc' : 'desc')];
+    if (this.predicate !== 'id') {
+      result.push('id');
+    }
+    return result;
+  }
+
+  protected onSuccess(data: IWaiver[] | null, headers: HttpHeaders, page: number): void {
+    this.totalItems = Number(headers.get('X-Total-Count'));
+    this.page = page;
+    this.router.navigate(['/waiver'], {
+      queryParams: {
+        page: this.page,
+        size: this.itemsPerPage,
+        sort: this.predicate + ',' + (this.ascending ? 'asc' : 'desc')
+      }
+    });
+    this.waivers = data || [];
+  }
+
+  protected onError(): void {
+    this.ngbPaginationPage = this.page;
   }
 }

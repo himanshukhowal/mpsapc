@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Янги Payment қўшиш",
+        "createOrEditLabel": "Paymentни таҳрирлаш",
+        "notFound": "No Payments found"
+      },
+      "created": "Payment {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Payment сақланди.",
+      "deleted": "{{ param }}- Payment ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Paymentни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

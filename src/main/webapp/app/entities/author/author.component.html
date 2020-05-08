@@ -21,18 +21,19 @@
     <div class="table-responsive" id="entities" *ngIf="authors?.length > 0">
         <table class="table table-striped" aria-describedby="page-heading">
             <thead>
-                <tr>
-                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.author.firstName">First Name</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.author.middleName">Middle Name</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.author.lastName">Last Name</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.author.email">Email</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.author.address">Address</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.author.city">City</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.author.state">State</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.author.country">Country</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.author.institute">Institute</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.author.designation">Designation</span></th>
+                <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
+                    <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="firstName"><span jhiTranslate="mpsapcApp.author.firstName">First Name</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="middleName"><span jhiTranslate="mpsapcApp.author.middleName">Middle Name</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="lastName"><span jhiTranslate="mpsapcApp.author.lastName">Last Name</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="email"><span jhiTranslate="mpsapcApp.author.email">Email</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="address"><span jhiTranslate="mpsapcApp.author.address">Address</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="city"><span jhiTranslate="mpsapcApp.author.city">City</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="state"><span jhiTranslate="mpsapcApp.author.state">State</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="country"><span jhiTranslate="mpsapcApp.author.country">Country</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="institute"><span jhiTranslate="mpsapcApp.author.institute">Institute</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="designation"><span jhiTranslate="mpsapcApp.author.designation">Designation</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="activeStatus"><span jhiTranslate="mpsapcApp.author.activeStatus">Active Status</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -49,6 +50,7 @@
                     <td>{{ author.country }}</td>
                     <td>{{ author.institute }}</td>
                     <td>{{ author.designation }}</td>
+                    <td jhiTranslate="{{ 'mpsapcApp.ActiveStatus.' + author.activeStatus }}">{{ author.activeStatus }}</td>
                     <td class="text-right">
                         <div class="btn-group">
                             <button type="submit"
@@ -75,5 +77,15 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+
+    <div *ngIf="authors?.length > 0">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="ngbPaginationPage" [pageSize]="itemsPerPage" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage($event)"></ngb-pagination>
+        </div>
     </div>
 </div>

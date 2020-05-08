@@ -22,6 +22,7 @@ import static org.hamcrest.Matchers.hasItem;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+import com.mps.domain.enumeration.ActiveStatus;
 /**
  * Integration tests for the {@link AuthorResource} REST controller.
  */
@@ -40,8 +41,8 @@ public class AuthorResourceIT {
     private static final String DEFAULT_LAST_NAME = "AAAAAAAAAA";
     private static final String UPDATED_LAST_NAME = "BBBBBBBBBB";
 
-    private static final String DEFAULT_EMAIL = "AAAAAAAAAA";
-    private static final String UPDATED_EMAIL = "BBBBBBBBBB";
+    private static final String DEFAULT_EMAIL = "\"K/R@z\\f.|k7OH";
+    private static final String UPDATED_EMAIL = "?O@ML[}\"K.Q\\";
 
     private static final String DEFAULT_ADDRESS = "AAAAAAAAAA";
     private static final String UPDATED_ADDRESS = "BBBBBBBBBB";
@@ -60,6 +61,9 @@ public class AuthorResourceIT {
 
     private static final String DEFAULT_DESIGNATION = "AAAAAAAAAA";
     private static final String UPDATED_DESIGNATION = "BBBBBBBBBB";
+
+    private static final ActiveStatus DEFAULT_ACTIVE_STATUS = ActiveStatus.Active;
+    private static final ActiveStatus UPDATED_ACTIVE_STATUS = ActiveStatus.Inactive;
 
     @Autowired
     private AuthorRepository authorRepository;
@@ -89,7 +93,8 @@ public class AuthorResourceIT {
             .state(DEFAULT_STATE)
             .country(DEFAULT_COUNTRY)
             .institute(DEFAULT_INSTITUTE)
-            .designation(DEFAULT_DESIGNATION);
+            .designation(DEFAULT_DESIGNATION)
+            .activeStatus(DEFAULT_ACTIVE_STATUS);
         // Add required entity
         Manuscript manuscript;
         if (TestUtil.findAll(em, Manuscript.class).isEmpty()) {
@@ -119,7 +124,8 @@ public class AuthorResourceIT {
             .state(UPDATED_STATE)
             .country(UPDATED_COUNTRY)
             .institute(UPDATED_INSTITUTE)
-            .designation(UPDATED_DESIGNATION);
+            .designation(UPDATED_DESIGNATION)
+            .activeStatus(UPDATED_ACTIVE_STATUS);
         // Add required entity
         Manuscript manuscript;
         if (TestUtil.findAll(em, Manuscript.class).isEmpty()) {
@@ -163,6 +169,7 @@ public class AuthorResourceIT {
         assertThat(testAuthor.getCountry()).isEqualTo(DEFAULT_COUNTRY);
         assertThat(testAuthor.getInstitute()).isEqualTo(DEFAULT_INSTITUTE);
         assertThat(testAuthor.getDesignation()).isEqualTo(DEFAULT_DESIGNATION);
+        assertThat(testAuthor.getActiveStatus()).isEqualTo(DEFAULT_ACTIVE_STATUS);
     }
 
     @Test
@@ -241,6 +248,24 @@ public class AuthorResourceIT {
 
     @Test
     @Transactional
+    public void checkActiveStatusIsRequired() throws Exception {
+        int databaseSizeBeforeTest = authorRepository.findAll().size();
+        // set the field null
+        author.setActiveStatus(null);
+
+        // Create the Author, which fails.
+
+        restAuthorMockMvc.perform(post("/api/authors")
+            .contentType(MediaType.APPLICATION_JSON)
+            .content(TestUtil.convertObjectToJsonBytes(author)))
+            .andExpect(status().isBadRequest());
+
+        List<Author> authorList = authorRepository.findAll();
+        assertThat(authorList).hasSize(databaseSizeBeforeTest);
+    }
+
+    @Test
+    @Transactional
     public void getAllAuthors() throws Exception {
         // Initialize the database
         authorRepository.saveAndFlush(author);
@@ -259,7 +284,8 @@ public class AuthorResourceIT {
             .andExpect(jsonPath("$.[*].state").value(hasItem(DEFAULT_STATE)))
             .andExpect(jsonPath("$.[*].country").value(hasItem(DEFAULT_COUNTRY)))
             .andExpect(jsonPath("$.[*].institute").value(hasItem(DEFAULT_INSTITUTE)))
-            .andExpect(jsonPath("$.[*].designation").value(hasItem(DEFAULT_DESIGNATION)));
+            .andExpect(jsonPath("$.[*].designation").value(hasItem(DEFAULT_DESIGNATION)))
+            .andExpect(jsonPath("$.[*].activeStatus").value(hasItem(DEFAULT_ACTIVE_STATUS.toString())));
     }
     
     @Test
@@ -282,7 +308,8 @@ public class AuthorResourceIT {
             .andExpect(jsonPath("$.state").value(DEFAULT_STATE))
             .andExpect(jsonPath("$.country").value(DEFAULT_COUNTRY))
             .andExpect(jsonPath("$.institute").value(DEFAULT_INSTITUTE))
-            .andExpect(jsonPath("$.designation").value(DEFAULT_DESIGNATION));
+            .andExpect(jsonPath("$.designation").value(DEFAULT_DESIGNATION))
+            .andExpect(jsonPath("$.activeStatus").value(DEFAULT_ACTIVE_STATUS.toString()));
     }
 
     @Test
@@ -315,7 +342,8 @@ public class AuthorResourceIT {
             .state(UPDATED_STATE)
             .country(UPDATED_COUNTRY)
             .institute(UPDATED_INSTITUTE)
-            .designation(UPDATED_DESIGNATION);
+            .designation(UPDATED_DESIGNATION)
+            .activeStatus(UPDATED_ACTIVE_STATUS);
 
         restAuthorMockMvc.perform(put("/api/authors")
             .contentType(MediaType.APPLICATION_JSON)
@@ -336,6 +364,7 @@ public class AuthorResourceIT {
         assertThat(testAuthor.getCountry()).isEqualTo(UPDATED_COUNTRY);
         assertThat(testAuthor.getInstitute()).isEqualTo(UPDATED_INSTITUTE);
         assertThat(testAuthor.getDesignation()).isEqualTo(UPDATED_DESIGNATION);
+        assertThat(testAuthor.getActiveStatus()).isEqualTo(UPDATED_ACTIVE_STATUS);
     }
 
     @Test

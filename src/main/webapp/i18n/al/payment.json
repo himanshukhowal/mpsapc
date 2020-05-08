@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Krijo një të ri Payment",
+        "createOrEditLabel": "Krijo ose përpuno një Payment",
+        "notFound": "No Payments found"
+      },
+      "created": "Një Payment i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Payment u përpunua me identifikues {{ param }}",
+      "deleted": "Një Payment u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

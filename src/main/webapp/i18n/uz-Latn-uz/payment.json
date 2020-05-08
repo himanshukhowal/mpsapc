@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Yangi Payment qo`shish",
+        "createOrEditLabel": "Paymentni tahrirlash",
+        "notFound": "No Payments found"
+      },
+      "created": "Payment {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Payment saqlandi",
+      "deleted": "{{ param }}- Payment o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Paymentni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

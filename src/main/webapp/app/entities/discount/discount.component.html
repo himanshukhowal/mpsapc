@@ -21,16 +21,16 @@
     <div class="table-responsive" id="entities" *ngIf="discounts?.length > 0">
         <table class="table table-striped" aria-describedby="page-heading">
             <thead>
-                <tr>
-                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.discountType">Discount Type</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.entityName">Entity Name</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.amount">Amount</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.dateFrom">Date From</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.dateTo">Date To</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.activeStatus">Active Status</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.dateCreated">Date Created</span></th>
-                    <th scope="col" ><span jhiTranslate="mpsapcApp.discount.dateModified">Date Modified</span></th>
+                <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
+                    <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="discountType"><span jhiTranslate="mpsapcApp.discount.discountType">Discount Type</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="entityName"><span jhiTranslate="mpsapcApp.discount.entityName">Entity Name</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="amount"><span jhiTranslate="mpsapcApp.discount.amount">Amount</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="dateFrom"><span jhiTranslate="mpsapcApp.discount.dateFrom">Date From</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="dateTo"><span jhiTranslate="mpsapcApp.discount.dateTo">Date To</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="activeStatus"><span jhiTranslate="mpsapcApp.discount.activeStatus">Active Status</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="dateCreated"><span jhiTranslate="mpsapcApp.discount.dateCreated">Date Created</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="dateModified"><span jhiTranslate="mpsapcApp.discount.dateModified">Date Modified</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -71,5 +71,15 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+
+    <div *ngIf="discounts?.length > 0">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="ngbPaginationPage" [pageSize]="itemsPerPage" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage($event)"></ngb-pagination>
+        </div>
     </div>
 </div>

@@ -28,6 +28,12 @@
                 <dd>
                     <span>{{ manuscript.dateModified }}</span>
                 </dd>
+                <dt><span jhiTranslate="mpsapcApp.manuscript.linkedPayment">Linked Payment</span></dt>
+                <dd>
+                    <div *ngIf="manuscript.linkedPayment">
+                        <a [routerLink]="['/payment', manuscript.linkedPayment?.id, 'view']">{{ manuscript.linkedPayment?.id }}</a>
+                    </div>
+                </dd>
                 <dt><span jhiTranslate="mpsapcApp.manuscript.manuscriptJournalAcronym">Manuscript Journal Acronym</span></dt>
                 <dd>
                     <div *ngIf="manuscript.manuscriptJournalAcronym">

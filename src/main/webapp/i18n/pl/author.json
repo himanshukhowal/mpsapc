@@ -26,6 +26,7 @@
       "country": "Country",
       "institute": "Institute",
       "designation": "Designation",
+      "activeStatus": "Active Status",
       "firstName": "First Name"
     }
   }

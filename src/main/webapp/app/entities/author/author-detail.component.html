@@ -48,6 +48,10 @@
                 <dd>
                     <span>{{ author.designation }}</span>
                 </dd>
+                <dt><span jhiTranslate="mpsapcApp.author.activeStatus">Active Status</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'mpsapcApp.ActiveStatus.' + author.activeStatus }}">{{ author.activeStatus }}</span>
+                </dd>
             </dl>
 
             <button type="submit"

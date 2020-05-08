@@ -2,6 +2,7 @@ package com.mps.web.rest;
 
 import com.mps.MpsapcApp;
 import com.mps.domain.Manuscript;
+import com.mps.domain.Payment;
 import com.mps.domain.Journal;
 import com.mps.domain.Author;
 import com.mps.repository.ManuscriptRepository;
@@ -75,6 +76,16 @@ public class ManuscriptResourceIT {
             .dateCreated(DEFAULT_DATE_CREATED)
             .dateModified(DEFAULT_DATE_MODIFIED);
         // Add required entity
+        Payment payment;
+        if (TestUtil.findAll(em, Payment.class).isEmpty()) {
+            payment = PaymentResourceIT.createEntity(em);
+            em.persist(payment);
+            em.flush();
+        } else {
+            payment = TestUtil.findAll(em, Payment.class).get(0);
+        }
+        manuscript.setLinkedPayment(payment);
+        // Add required entity
         Journal journal;
         if (TestUtil.findAll(em, Journal.class).isEmpty()) {
             journal = JournalResourceIT.createEntity(em);
@@ -109,6 +120,16 @@ public class ManuscriptResourceIT {
             .apcStatus(UPDATED_APC_STATUS)
             .dateCreated(UPDATED_DATE_CREATED)
             .dateModified(UPDATED_DATE_MODIFIED);
+        // Add required entity
+        Payment payment;
+        if (TestUtil.findAll(em, Payment.class).isEmpty()) {
+            payment = PaymentResourceIT.createUpdatedEntity(em);
+            em.persist(payment);
+            em.flush();
+        } else {
+            payment = TestUtil.findAll(em, Payment.class).get(0);
+        }
+        manuscript.setLinkedPayment(payment);
         // Add required entity
         Journal journal;
         if (TestUtil.findAll(em, Journal.class).isEmpty()) {
