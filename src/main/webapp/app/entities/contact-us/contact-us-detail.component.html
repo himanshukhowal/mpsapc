@@ -1,0 +1,50 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="contactUs">
+            <h2><span jhiTranslate="mpsapcApp.contactUs.detail.title">Contact Us</span> {{ contactUs.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="mpsapcApp.contactUs.name">Name</span></dt>
+                <dd>
+                    <span>{{ contactUs.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.contactUs.email">Email</span></dt>
+                <dd>
+                    <span>{{ contactUs.email }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.contactUs.contact">Contact</span></dt>
+                <dd>
+                    <span>{{ contactUs.contact }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.contactUs.message">Message</span></dt>
+                <dd>
+                    <span>{{ contactUs.message }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.contactUs.dateAdded">Date Added</span></dt>
+                <dd>
+                    <span>{{ contactUs.dateAdded }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.contactUs.dateModified">Date Modified</span></dt>
+                <dd>
+                    <span>{{ contactUs.dateModified }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/contact-us', contactUs.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

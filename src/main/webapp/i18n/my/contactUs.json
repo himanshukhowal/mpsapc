@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Contact Us အသစ်ထည့်မည်",
+        "createOrEditLabel": "Contact Us အသစ်ထည့်ခြင်း (သို့) ပြုပြင်ခြင်း",
+        "notFound": "No Contactuses found"
+      },
+      "created": "{{ param }} အိုင်ဒီဖြင့် Contact Us အသစ်တစ်ခုအား ထည့်ပြီးပါပြီ။",
+      "updated": "{{ param }} အိုင်ဒီဖြင့် Contact Us တစ်ခုအား ပြုပြင်ပြီးပါပြီ။",
+      "deleted": "{{ param }} အိုင်ဒီဖြင့် Contact Us တစ်ခုအား ဖျက်ပြီးပါပြီ။",
+      "delete": {
+        "question": "Contact Us {{ id }} အား ဖျက်ပါမည်။ သေချာပါသလား?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

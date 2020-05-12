@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Thêm mới một Contact Us",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Một Contact Us mới được tạo với định danh {{ param }}",
+      "updated": "Một Contact Us cập nhật với định danh {{ param }}",
+      "deleted": "Một Contact Us đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Contact Us {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

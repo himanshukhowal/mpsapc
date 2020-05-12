@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "Luo Waiver",
+        "createOrEditLabel": "Luo tai muokkaa Waiver",
+        "notFound": "Waiver ei löytynyt"
+      },
+      "created": "Uusi Waiver on luotu, id: {{ param }}",
+      "updated": "Waiver on päivitetty, id: {{ param }}",
+      "deleted": "Waiver on päivitetty, id: {{ param }}",
+      "delete": {
+        "question": "Haluatko varmasti poistaa Waiver {{ id }}?"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

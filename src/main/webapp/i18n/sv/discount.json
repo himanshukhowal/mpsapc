@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Skapa en ny Discount",
+        "createOrEditLabel": "Skapa eller ändra en Discount",
+        "notFound": "No Discounts found"
+      },
+      "created": "En ny Discount är skapad med id {{ param }}",
+      "updated": "En Discount är uppdaterad med id  {{ param }}",
+      "deleted": "En Discount är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Discount {{ id }}?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "dateFrom": "Date From",
+      "dateTo": "Date To",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

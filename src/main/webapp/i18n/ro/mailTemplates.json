@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Creeare o nouă entitate Mail Templates",
+        "createOrEditLabel": "Creeare sau editare Mail Templates",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "A fost creată o nouă entitate Mail Templates cu identificatorul {{ param }}",
+      "updated": "Mail Templates cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Mail Templates cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Mail Templates {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

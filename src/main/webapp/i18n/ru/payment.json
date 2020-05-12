@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Создать новый Payment",
+        "createOrEditLabel": "Создать или отредактировать Payment",
+        "notFound": "No Payments found"
+      },
+      "created": "Новый Payment создан с идентификатором {{ param }}",
+      "updated": "Payment обновлен с идентификатором {{ param }}",
+      "deleted": "Payment удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

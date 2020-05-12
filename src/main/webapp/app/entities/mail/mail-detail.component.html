@@ -1,0 +1,58 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="mail">
+            <h2><span jhiTranslate="mpsapcApp.mail.detail.title">Mail</span> {{ mail.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="mpsapcApp.mail.mailConfigurationName">Mail Configuration Name</span></dt>
+                <dd>
+                    <span>{{ mail.mailConfigurationName }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.mail.stageName">Stage Name</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'mpsapcApp.APCStatus.' + mail.stageName }}">{{ mail.stageName }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.mail.activeStatus">Active Status</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'mpsapcApp.ActiveStatus.' + mail.activeStatus }}">{{ mail.activeStatus }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.mail.dateCreated">Date Created</span></dt>
+                <dd>
+                    <span>{{ mail.dateCreated }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.mail.dateModified">Date Modified</span></dt>
+                <dd>
+                    <span>{{ mail.dateModified }}</span>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.mail.associatedJournal">Associated Journal</span></dt>
+                <dd>
+                    <div *ngIf="mail.associatedJournal">
+                        <a [routerLink]="['/journal', mail.associatedJournal?.id, 'view']">{{ mail.associatedJournal?.journalAcronym }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="mpsapcApp.mail.associatedMailTemplate">Associated Mail Template</span></dt>
+                <dd>
+                    <div *ngIf="mail.associatedMailTemplate">
+                        <a [routerLink]="['/mail-templates', mail.associatedMailTemplate?.id, 'view']">{{ mail.associatedMailTemplate?.templateName }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/mail', mail.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

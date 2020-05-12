@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Luo Payment",
+        "createOrEditLabel": "Luo tai muokkaa Payment",
+        "notFound": "Payment ei löytynyt"
+      },
+      "created": "Uusi Payment on luotu, id: {{ param }}",
+      "updated": "Payment on päivitetty, id: {{ param }}",
+      "deleted": "Payment on päivitetty, id: {{ param }}",
+      "delete": {
+        "question": "Haluatko varmasti poistaa Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

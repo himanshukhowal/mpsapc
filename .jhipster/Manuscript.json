@@ -1,0 +1,73 @@
+{
+    "name": "Manuscript",
+    "fields": [
+        {
+            "fieldName": "manuscriptId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "manuscriptTitle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "apcStatus",
+            "fieldType": "APCStatus",
+            "fieldValues": "Initiated,Pending,Completed,RefundInitiated,Refunded",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "payment",
+            "otherEntityRelationshipName": "manuscript",
+            "relationshipValidateRules": "required",
+            "relationshipName": "linkedPayment",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "journal",
+            "otherEntityRelationshipName": "journalAcronym",
+            "relationshipValidateRules": "required",
+            "relationshipName": "manuscriptJournalAcronym",
+            "otherEntityField": "journalAcronym"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "author",
+            "otherEntityRelationshipName": "firstName",
+            "relationshipValidateRules": "required",
+            "relationshipName": "manuscriptAuthorName",
+            "otherEntityField": "firstName"
+        }
+    ],
+    "changelogDate": "20200512082000",
+    "entityTableName": "manuscript",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "Kreiraj novi Mail",
+        "createOrEditLabel": "Kreirajte ili izmenite Mail",
+        "notFound": "No Mail found"
+      },
+      "created": "Kreiran je novi Mail pod nazivom {{ param }}",
+      "updated": "Mail pod nazivom {{ param }} je ažuriran",
+      "deleted": "Mail pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Mail pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}

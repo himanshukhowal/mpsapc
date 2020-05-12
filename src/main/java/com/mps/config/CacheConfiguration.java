@@ -45,6 +45,19 @@ public class CacheConfiguration {
             createCache(cm, com.mps.domain.User.class.getName());
             createCache(cm, com.mps.domain.Authority.class.getName());
             createCache(cm, com.mps.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mps.domain.Journal.class.getName());
+            createCache(cm, com.mps.domain.Journal.class.getName() + ".journalAcronyms");
+            createCache(cm, com.mps.domain.Journal.class.getName() + ".mailingConfigurations");
+            createCache(cm, com.mps.domain.Manuscript.class.getName());
+            createCache(cm, com.mps.domain.Author.class.getName());
+            createCache(cm, com.mps.domain.Author.class.getName() + ".firstNames");
+            createCache(cm, com.mps.domain.Waiver.class.getName());
+            createCache(cm, com.mps.domain.Discount.class.getName());
+            createCache(cm, com.mps.domain.Payment.class.getName());
+            createCache(cm, com.mps.domain.Mail.class.getName());
+            createCache(cm, com.mps.domain.MailTemplates.class.getName());
+            createCache(cm, com.mps.domain.MailTemplates.class.getName() + ".templateNames");
+            createCache(cm, com.mps.domain.ContactUs.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Создать новый Journal",
+        "createOrEditLabel": "Создать или отредактировать Journal",
+        "notFound": "No Journals found"
+      },
+      "created": "Новый Journal создан с идентификатором {{ param }}",
+      "updated": "Journal обновлен с идентификатором {{ param }}",
+      "deleted": "Journal удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Journal {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym",
+      "mailingConfiguration": "Mailing Configuration"
+    }
+  }
+}

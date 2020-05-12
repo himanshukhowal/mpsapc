@@ -1,0 +1,33 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "Yangi Author qo`shish",
+        "createOrEditLabel": "Authorni tahrirlash",
+        "notFound": "No Authors found"
+      },
+      "created": "Author {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Author saqlandi",
+      "deleted": "{{ param }}- Author o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Authorni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "activeStatus": "Active Status",
+      "firstName": "First Name"
+    }
+  }
+}

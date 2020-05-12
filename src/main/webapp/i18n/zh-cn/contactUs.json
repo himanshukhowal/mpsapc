@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "创建新 Contact Us",
+        "createOrEditLabel": "创建或编辑 Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Contact Us {{ param }} 创建成功",
+      "updated": "Contact Us {{ param }} 更新成功",
+      "deleted": "Contact Us {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Contact Us {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

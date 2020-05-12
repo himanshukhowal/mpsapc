@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Pridať Contact Us",
+        "createOrEditLabel": "Pridať alebo upraviť Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Bol vytvorený potomok entity Contact Us s identifikátorom {{ param }}",
+      "updated": "Potomok entity Contact Us s identifikátorom {{ param }} bol upravený.",
+      "deleted": "Potomok entity Contact Us s identifikátorom {{ param }} bol vymazaný.",
+      "delete": {
+        "question": "Ste si istý, že chcete vymazať Contact Us {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

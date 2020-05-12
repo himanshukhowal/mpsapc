@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "Янги Mail қўшиш",
+        "createOrEditLabel": "Mailни таҳрирлаш",
+        "notFound": "No Mail found"
+      },
+      "created": "Mail {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Mail сақланди.",
+      "deleted": "{{ param }}- Mail ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Mailни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}

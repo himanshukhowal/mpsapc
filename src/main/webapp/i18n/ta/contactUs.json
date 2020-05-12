@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Contact Us-ஐ உருவாக்கு",
+        "createOrEditLabel": "Contact Us -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Contact Us புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Contact Us மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Contact Us நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Contact Us {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

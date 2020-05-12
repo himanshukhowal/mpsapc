@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "Thêm mới một Mail",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Mail",
+        "notFound": "No Mail found"
+      },
+      "created": "Một Mail mới được tạo với định danh {{ param }}",
+      "updated": "Một Mail cập nhật với định danh {{ param }}",
+      "deleted": "Một Mail đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Mail {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}

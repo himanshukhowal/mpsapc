@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Янги Journal қўшиш",
+        "createOrEditLabel": "Journalни таҳрирлаш",
+        "notFound": "No Journals found"
+      },
+      "created": "Journal {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Journal сақланди.",
+      "deleted": "{{ param }}- Journal ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Journalни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym",
+      "mailingConfiguration": "Mailing Configuration"
+    }
+  }
+}

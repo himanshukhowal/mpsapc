@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "创建新 Mail Templates",
+        "createOrEditLabel": "创建或编辑 Mail Templates",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Mail Templates {{ param }} 创建成功",
+      "updated": "Mail Templates {{ param }} 更新成功",
+      "deleted": "Mail Templates {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Mail Templates {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

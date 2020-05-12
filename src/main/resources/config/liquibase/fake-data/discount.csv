@@ -1,0 +1,11 @@
+id;discount_type;entity_name;amount;date_from;date_to;active_status;date_created;date_modified
+1;Journal;harness Generic;15664;2020-05-11;2020-05-11;Active;2020-05-12;2020-05-11
+2;Institute;firmware;26429;2020-05-11;2020-05-11;Inactive;2020-05-11;2020-05-11
+3;Institute;Handcrafted Granite Shirt;43105;2020-05-12;2020-05-11;Inactive;2020-05-11;2020-05-11
+4;Country;Rustic mobile;50216;2020-05-12;2020-05-11;Active;2020-05-11;2020-05-11
+5;Journal;Mouse users;60624;2020-05-12;2020-05-12;Active;2020-05-11;2020-05-11
+6;Journal;users Haiti;18508;2020-05-12;2020-05-12;Inactive;2020-05-11;2020-05-12
+7;Country;override hack;52244;2020-05-11;2020-05-12;Active;2020-05-11;2020-05-12
+8;Institute;Croatia;83671;2020-05-11;2020-05-12;Inactive;2020-05-11;2020-05-11
+9;Journal;Assistant Cuban Peso Peso Convertible Licensed;48773;2020-05-11;2020-05-11;Active;2020-05-11;2020-05-11
+10;Journal;XML Vatu;53884;2020-05-12;2020-05-11;Active;2020-05-12;2020-05-11

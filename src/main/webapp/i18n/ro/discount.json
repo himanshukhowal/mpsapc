@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Creeare o nouă entitate Discount",
+        "createOrEditLabel": "Creeare sau editare Discount",
+        "notFound": "No Discounts found"
+      },
+      "created": "A fost creată o nouă entitate Discount cu identificatorul {{ param }}",
+      "updated": "Discount cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Discount cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Discount {{ id }}?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "dateFrom": "Date From",
+      "dateTo": "Date To",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

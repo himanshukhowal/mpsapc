@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "Skapa en ny Waiver",
+        "createOrEditLabel": "Skapa eller ändra en Waiver",
+        "notFound": "No Waivers found"
+      },
+      "created": "En ny Waiver är skapad med id {{ param }}",
+      "updated": "En Waiver är uppdaterad med id  {{ param }}",
+      "deleted": "En Waiver är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Waiver {{ id }}?"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

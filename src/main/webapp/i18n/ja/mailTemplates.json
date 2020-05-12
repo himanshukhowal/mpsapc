@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "MailTemplates",
+        "createLabel": "Mail Templates を追加",
+        "createOrEditLabel": "Mail Templatesを追加または編集",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "A new Mail Templates is created with identifier {{ param }}",
+      "updated": "A Mail Templates is updated with identifier {{ param }}",
+      "deleted": "A Mail Templates is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Mail Templates {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

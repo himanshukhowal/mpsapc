@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Kreiraj novi Journal",
+        "createOrEditLabel": "Kreirajte ili izmenite Journal",
+        "notFound": "No Journals found"
+      },
+      "created": "Kreiran je novi Journal pod nazivom {{ param }}",
+      "updated": "Journal pod nazivom {{ param }} je ažuriran",
+      "deleted": "Journal pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Journal pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym",
+      "mailingConfiguration": "Mailing Configuration"
+    }
+  }
+}

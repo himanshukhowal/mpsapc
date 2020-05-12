@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Genera un nuovo Manuscript",
+        "createOrEditLabel": "Genera o modifica un Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "&Egrave; stato generato un nuovo Manuscript con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Manuscript identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Manuscript con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Manuscript {{ id }}?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "linkedPayment": "Linked Payment",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym",
+      "manuscriptAuthorName": "Manuscript Author Name"
+    }
+  }
+}

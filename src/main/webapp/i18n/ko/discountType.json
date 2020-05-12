@@ -1,0 +1,10 @@
+{
+  "mpsapcApp": {
+    "DiscountType": {
+      "null": "",
+      "Journal": "Journal",
+      "Country": "Country",
+      "Institute": "Institute"
+    }
+  }
+}

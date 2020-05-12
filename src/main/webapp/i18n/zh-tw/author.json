@@ -1,0 +1,33 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "建立一筆新的 Author",
+        "createOrEditLabel": "建立或編輯 Author",
+        "notFound": "No Authors found"
+      },
+      "created": "新的 Author 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 Author 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 Author 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Author {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "activeStatus": "Active Status",
+      "firstName": "First Name"
+    }
+  }
+}

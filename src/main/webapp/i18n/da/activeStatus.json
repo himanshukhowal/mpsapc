@@ -1,0 +1,9 @@
+{
+  "mpsapcApp": {
+    "ActiveStatus": {
+      "null": "",
+      "Active": "Active",
+      "Inactive": "Inactive"
+    }
+  }
+}

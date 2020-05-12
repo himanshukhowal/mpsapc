@@ -1,0 +1,33 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "สร้าง Author",
+        "createOrEditLabel": "สร้างหรือแก้ไข Author",
+        "notFound": "No Authors found"
+      },
+      "created": "Author ถูกสร้างด้วย {{ param }}",
+      "updated": "Author ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Author ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Author {{ id }}?"
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "activeStatus": "Active Status",
+      "firstName": "First Name"
+    }
+  }
+}

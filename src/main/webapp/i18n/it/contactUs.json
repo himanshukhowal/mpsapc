@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Genera un nuovo Contact Us",
+        "createOrEditLabel": "Genera o modifica un Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "&Egrave; stato generato un nuovo Contact Us con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Contact Us identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Contact Us con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Contact Us {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

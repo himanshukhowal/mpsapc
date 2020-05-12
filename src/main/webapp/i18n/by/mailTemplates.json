@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Стварыць новы Mail Templates",
+        "createOrEditLabel": "Стварыць або адрэдагаваць Mail Templates",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Новы Mail Templates створан з ідэнтыфікатарам {{ param }}",
+      "updated": "Mail Templates абноўлен з ідэнтыфікатарам {{ param }}",
+      "deleted": "Mail Templates выдален з ідэнтыфікатарам {{ param }}",
+      "delete": {
+        "question": "Вы ўпэўнены, што жадаеце выдаліць Mail Templates {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

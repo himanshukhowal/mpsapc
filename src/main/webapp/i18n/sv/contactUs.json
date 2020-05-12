@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Skapa en ny Contact Us",
+        "createOrEditLabel": "Skapa eller ändra en Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "En ny Contact Us är skapad med id {{ param }}",
+      "updated": "En Contact Us är uppdaterad med id  {{ param }}",
+      "deleted": "En Contact Us är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Contact Us {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Crear nuevo Payment",
+        "createOrEditLabel": "Crear o editar Payment",
+        "notFound": "Ningún Payments encontrado"
+      },
+      "created": "Un nuevo Payment ha sido creado con el identificador {{ param }}",
+      "updated": "Un Payment ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Payment ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

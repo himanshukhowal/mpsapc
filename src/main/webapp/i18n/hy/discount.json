@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Ստեղծել նոր Discount",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Discount",
+        "notFound": "No Discounts found"
+      },
+      "created": "Նոր Discount ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Discount թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Discount հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Discount {{ id }}?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "dateFrom": "Date From",
+      "dateTo": "Date To",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

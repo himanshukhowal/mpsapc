@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Creeare o nouă entitate Journal",
+        "createOrEditLabel": "Creeare sau editare Journal",
+        "notFound": "No Journals found"
+      },
+      "created": "A fost creată o nouă entitate Journal cu identificatorul {{ param }}",
+      "updated": "Journal cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Journal cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Journal {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym",
+      "mailingConfiguration": "Mailing Configuration"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "Kreiraj novi Waiver",
+        "createOrEditLabel": "Kreirajte ili izmenite Waiver",
+        "notFound": "No Waivers found"
+      },
+      "created": "Kreiran je novi Waiver pod nazivom {{ param }}",
+      "updated": "Waiver pod nazivom {{ param }} je ažuriran",
+      "deleted": "Waiver pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Waiver pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

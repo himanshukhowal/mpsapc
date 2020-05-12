@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "สร้าง Contact Us",
+        "createOrEditLabel": "สร้างหรือแก้ไข Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Contact Us ถูกสร้างด้วย {{ param }}",
+      "updated": "Contact Us ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Contact Us ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Contact Us {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

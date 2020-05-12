@@ -1,0 +1,33 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "Lisa uus Author",
+        "createOrEditLabel": "Lisa või muuda Author",
+        "notFound": "No Authors found"
+      },
+      "created": "Uus Author on loodud identifikaatoriga {{ param }}",
+      "updated": "Author identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Author identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Author {{ id }}?"
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "activeStatus": "Active Status",
+      "firstName": "First Name"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "สร้าง Manuscript",
+        "createOrEditLabel": "สร้างหรือแก้ไข Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Manuscript ถูกสร้างด้วย {{ param }}",
+      "updated": "Manuscript ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Manuscript ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Manuscript {{ id }}?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "linkedPayment": "Linked Payment",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym",
+      "manuscriptAuthorName": "Manuscript Author Name"
+    }
+  }
+}

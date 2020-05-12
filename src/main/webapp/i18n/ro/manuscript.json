@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Creeare o nouă entitate Manuscript",
+        "createOrEditLabel": "Creeare sau editare Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "A fost creată o nouă entitate Manuscript cu identificatorul {{ param }}",
+      "updated": "Manuscript cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Manuscript cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Manuscript {{ id }}?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "linkedPayment": "Linked Payment",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym",
+      "manuscriptAuthorName": "Manuscript Author Name"
+    }
+  }
+}

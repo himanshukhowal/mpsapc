@@ -1,0 +1,117 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-mail-heading" jhiTranslate="mpsapcApp.mail.home.createOrEditLabel">Create or edit a Mail</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.mail.mailConfigurationName" for="field_mailConfigurationName">Mail Configuration Name</label>
+                    <input type="text" class="form-control" name="mailConfigurationName" id="field_mailConfigurationName"
+                           formControlName="mailConfigurationName"/>
+                    <div *ngIf="editForm.get('mailConfigurationName')!.invalid && (editForm.get('mailConfigurationName')!.dirty || editForm.get('mailConfigurationName')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('mailConfigurationName')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.mail.stageName" for="field_stageName">Stage Name</label>
+                    <select class="form-control" name="stageName" formControlName="stageName" id="field_stageName">
+                        <option value="Initiated">{{ 'mpsapcApp.APCStatus.Initiated' | translate }}</option>
+                        <option value="Pending">{{ 'mpsapcApp.APCStatus.Pending' | translate }}</option>
+                        <option value="Completed">{{ 'mpsapcApp.APCStatus.Completed' | translate }}</option>
+                        <option value="RefundInitiated">{{ 'mpsapcApp.APCStatus.RefundInitiated' | translate }}</option>
+                        <option value="Refunded">{{ 'mpsapcApp.APCStatus.Refunded' | translate }}</option>
+                    </select>
+                    <div *ngIf="editForm.get('stageName')!.invalid && (editForm.get('stageName')!.dirty || editForm.get('stageName')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('stageName')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.mail.activeStatus" for="field_activeStatus">Active Status</label>
+                    <select class="form-control" name="activeStatus" formControlName="activeStatus" id="field_activeStatus">
+                        <option value="Active">{{ 'mpsapcApp.ActiveStatus.Active' | translate }}</option>
+                        <option value="Inactive">{{ 'mpsapcApp.ActiveStatus.Inactive' | translate }}</option>
+                    </select>
+                    <div *ngIf="editForm.get('activeStatus')!.invalid && (editForm.get('activeStatus')!.dirty || editForm.get('activeStatus')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('activeStatus')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.mail.dateCreated" for="field_dateCreated">Date Created</label>
+                    <div class="input-group">
+                        <input id="field_dateCreated" type="text" class="form-control" name="dateCreated" ngbDatepicker #dateCreatedDp="ngbDatepicker" formControlName="dateCreated"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="dateCreatedDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.mail.dateModified" for="field_dateModified">Date Modified</label>
+                    <div class="input-group">
+                        <input id="field_dateModified" type="text" class="form-control" name="dateModified" ngbDatepicker #dateModifiedDp="ngbDatepicker" formControlName="dateModified"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="dateModifiedDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.mail.associatedJournal" for="field_associatedJournal">Associated Journal</label>
+                    <select class="form-control" id="field_associatedJournal" name="associatedJournal" formControlName="associatedJournal">
+                        <option *ngIf="!editForm.get('associatedJournal')!.value" [ngValue]="null" selected></option>
+                        <option [ngValue]="journalOption.id === editForm.get('associatedJournal')!.value?.id ? editForm.get('associatedJournal')!.value : journalOption" *ngFor="let journalOption of journals; trackBy: trackById">{{ journalOption.journalAcronym }}</option>
+                    </select>
+                </div>
+                <div *ngIf="editForm.get('associatedJournal')!.invalid && (editForm.get('associatedJournal')!.dirty || editForm.get('associatedJournal')!.touched)">
+                    <small class="form-text text-danger"
+                           *ngIf="editForm.get('associatedJournal')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.mail.associatedMailTemplate" for="field_associatedMailTemplate">Associated Mail Template</label>
+                    <select class="form-control" id="field_associatedMailTemplate" name="associatedMailTemplate" formControlName="associatedMailTemplate">
+                        <option *ngIf="!editForm.get('associatedMailTemplate')!.value" [ngValue]="null" selected></option>
+                        <option [ngValue]="mailTemplatesOption.id === editForm.get('associatedMailTemplate')!.value?.id ? editForm.get('associatedMailTemplate')!.value : mailTemplatesOption" *ngFor="let mailTemplatesOption of mailtemplates; trackBy: trackById">{{ mailTemplatesOption.templateName }}</option>
+                    </select>
+                </div>
+                <div *ngIf="editForm.get('associatedMailTemplate')!.invalid && (editForm.get('associatedMailTemplate')!.dirty || editForm.get('associatedMailTemplate')!.touched)">
+                    <small class="form-text text-danger"
+                           *ngIf="editForm.get('associatedMailTemplate')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                    </small>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

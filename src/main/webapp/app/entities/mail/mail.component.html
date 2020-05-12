@@ -1,0 +1,81 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="mpsapcApp.mail.home.title">Mail</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-mail" [routerLink]="['/mail/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="mpsapcApp.mail.home.createLabel">
+            Create a new Mail
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="mail?.length === 0">
+        <span jhiTranslate="mpsapcApp.mail.home.notFound">No mail found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="mail?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.mail.mailConfigurationName">Mail Configuration Name</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.mail.stageName">Stage Name</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.mail.activeStatus">Active Status</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.mail.dateCreated">Date Created</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.mail.dateModified">Date Modified</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.mail.associatedJournal">Associated Journal</span></th>
+                    <th scope="col" ><span jhiTranslate="mpsapcApp.mail.associatedMailTemplate">Associated Mail Template</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let mail of mail ;trackBy: trackId">
+                    <td><a [routerLink]="['/mail', mail.id, 'view']">{{ mail.id }}</a></td>
+                    <td>{{ mail.mailConfigurationName }}</td>
+                    <td jhiTranslate="{{ 'mpsapcApp.APCStatus.' + mail.stageName }}">{{ mail.stageName }}</td>
+                    <td jhiTranslate="{{ 'mpsapcApp.ActiveStatus.' + mail.activeStatus }}">{{ mail.activeStatus }}</td>
+                    <td>{{ mail.dateCreated | date:'mediumDate' }}</td>
+                    <td>{{ mail.dateModified | date:'mediumDate' }}</td>
+                    <td>
+                        <div *ngIf="mail.associatedJournal">
+                            <a [routerLink]="['/journal', mail.associatedJournal?.id, 'view']" >{{ mail.associatedJournal?.journalAcronym }}</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div *ngIf="mail.associatedMailTemplate">
+                            <a [routerLink]="['/mail-templates', mail.associatedMailTemplate?.id, 'view']" >{{ mail.associatedMailTemplate?.templateName }}</a>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/mail', mail.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/mail', mail.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(mail)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

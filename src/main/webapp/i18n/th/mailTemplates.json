@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "สร้าง Mail Templates",
+        "createOrEditLabel": "สร้างหรือแก้ไข Mail Templates",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Mail Templates ถูกสร้างด้วย {{ param }}",
+      "updated": "Mail Templates ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Mail Templates ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Mail Templates {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

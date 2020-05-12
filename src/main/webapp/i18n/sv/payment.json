@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Skapa en ny Payment",
+        "createOrEditLabel": "Skapa eller ändra en Payment",
+        "notFound": "No Payments found"
+      },
+      "created": "En ny Payment är skapad med id {{ param }}",
+      "updated": "En Payment är uppdaterad med id  {{ param }}",
+      "deleted": "En Payment är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

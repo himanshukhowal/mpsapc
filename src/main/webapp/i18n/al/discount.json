@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Krijo një të ri Discount",
+        "createOrEditLabel": "Krijo ose përpuno një Discount",
+        "notFound": "No Discounts found"
+      },
+      "created": "Një Discount i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Discount u përpunua me identifikues {{ param }}",
+      "deleted": "Një Discount u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Discount {{ id }}?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "dateFrom": "Date From",
+      "dateTo": "Date To",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

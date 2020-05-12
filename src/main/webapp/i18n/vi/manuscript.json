@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Thêm mới một Manuscript",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Một Manuscript mới được tạo với định danh {{ param }}",
+      "updated": "Một Manuscript cập nhật với định danh {{ param }}",
+      "deleted": "Một Manuscript đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Manuscript {{ id }}?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "linkedPayment": "Linked Payment",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym",
+      "manuscriptAuthorName": "Manuscript Author Name"
+    }
+  }
+}

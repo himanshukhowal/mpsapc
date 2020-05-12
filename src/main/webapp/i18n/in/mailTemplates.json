@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "mailTemplates": {
+      "home": {
+        "title": "Mail Templates",
+        "createLabel": "Buat Mail Templates baru",
+        "createOrEditLabel": "Buat atau edit Mail Templates",
+        "notFound": "No Mail Templates found"
+      },
+      "created": "Mail Templates dengan id {{ param }} telah dibuat",
+      "updated": "Mail Templates dengan id {{ param }} telah diperbaharui",
+      "deleted": "Mail Templates dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Mail Templates {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail Templates"
+      },
+      "templateName": "Template Name",
+      "mailCC": "Mail CC",
+      "mailBCC": "Mail BCC",
+      "mailSubject": "Mail Subject",
+      "mailBody": "Mail Body",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "templateName": "Template Name"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+    "name": "MailTemplates",
+    "fields": [
+        {
+            "fieldName": "templateName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "mailCC",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mailBCC",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mailSubject",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mailBody",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "mail",
+            "otherEntityRelationshipName": "associatedMailTemplate",
+            "relationshipValidateRules": "required",
+            "relationshipName": "templateName"
+        }
+    ],
+    "changelogDate": "20200512082600",
+    "entityTableName": "mail_templates",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

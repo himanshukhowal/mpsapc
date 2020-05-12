@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "Krijo një të ri Waiver",
+        "createOrEditLabel": "Krijo ose përpuno një Waiver",
+        "notFound": "No Waivers found"
+      },
+      "created": "Një Waiver i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Waiver u përpunua me identifikues {{ param }}",
+      "deleted": "Një Waiver u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Waiver {{ id }}?"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

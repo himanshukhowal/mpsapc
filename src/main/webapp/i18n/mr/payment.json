@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "नवीन Payment तयार करा",
+        "createOrEditLabel": "Payment तयार किंवा संपादित करा",
+        "notFound": "No Payments found"
+      },
+      "created": "Payment [identifier: {{ param }}] तयार आहे",
+      "updated": "Payment [identifier: {{ param }}] सुधारित केले आहे",
+      "deleted": "Payment [identifier: {{ param }}] हटविले आहे",
+      "delete": {
+        "question": "Payment [id: {{ id }}] काढून टाकण्याबाबत पुष्टी?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Author",
+        "createLabel": "Dodaj Author",
+        "createOrEditLabel": "Dodaj lub edytuj: Author",
+        "notFound": "No Authors found"
+      },
+      "created": "Utworzono nowy obiekt typu Author z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Author z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Author z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Author {{ id }}?"
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "activeStatus": "Active Status",
+      "firstName": "First Name"
+    }
+  }
+}

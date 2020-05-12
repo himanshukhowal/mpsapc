@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Ստեղծել նոր Journal",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Journal",
+        "notFound": "No Journals found"
+      },
+      "created": "Նոր Journal ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Journal թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Journal հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Journal {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym",
+      "mailingConfiguration": "Mailing Configuration"
+    }
+  }
+}

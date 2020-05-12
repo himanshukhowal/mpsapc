@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Journal-ஐ உருவாக்கு",
+        "createOrEditLabel": "Journal -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Journals found"
+      },
+      "created": "Journal புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Journal மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Journal நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Journal {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym",
+      "mailingConfiguration": "Mailing Configuration"
+    }
+  }
+}

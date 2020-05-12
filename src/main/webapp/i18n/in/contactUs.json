@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Buat Contact Us baru",
+        "createOrEditLabel": "Buat atau edit Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Contact Us dengan id {{ param }} telah dibuat",
+      "updated": "Contact Us dengan id {{ param }} telah diperbaharui",
+      "deleted": "Contact Us dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Contact Us {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

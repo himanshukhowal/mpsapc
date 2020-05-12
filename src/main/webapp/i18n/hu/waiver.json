@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "Egy új Waiver létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Waivert",
+        "notFound": "No Waivers found"
+      },
+      "created": "Egy új Waiver lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Waiver módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Waiver törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Waivert {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

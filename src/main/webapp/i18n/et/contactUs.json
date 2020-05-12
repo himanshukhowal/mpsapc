@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Lisa uus Contact Us",
+        "createOrEditLabel": "Lisa või muuda Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Uus Contact Us on loodud identifikaatoriga {{ param }}",
+      "updated": "Contact Us identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Contact Us identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Contact Us {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

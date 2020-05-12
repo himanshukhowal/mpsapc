@@ -1,0 +1,84 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-journal-heading" jhiTranslate="mpsapcApp.journal.home.createOrEditLabel">Create or edit a Journal</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.journal.journalAcronym" for="field_journalAcronym">Journal Acronym</label>
+                    <input type="text" class="form-control" name="journalAcronym" id="field_journalAcronym"
+                           formControlName="journalAcronym"/>
+                    <div *ngIf="editForm.get('journalAcronym')!.invalid && (editForm.get('journalAcronym')!.dirty || editForm.get('journalAcronym')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('journalAcronym')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.journal.journalTitle" for="field_journalTitle">Journal Title</label>
+                    <input type="text" class="form-control" name="journalTitle" id="field_journalTitle"
+                           formControlName="journalTitle"/>
+                    <div *ngIf="editForm.get('journalTitle')!.invalid && (editForm.get('journalTitle')!.dirty || editForm.get('journalTitle')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('journalTitle')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.journal.activeStatus" for="field_activeStatus">Active Status</label>
+                    <select class="form-control" name="activeStatus" formControlName="activeStatus" id="field_activeStatus">
+                        <option value="Active">{{ 'mpsapcApp.ActiveStatus.Active' | translate }}</option>
+                        <option value="Inactive">{{ 'mpsapcApp.ActiveStatus.Inactive' | translate }}</option>
+                    </select>
+                    <div *ngIf="editForm.get('activeStatus')!.invalid && (editForm.get('activeStatus')!.dirty || editForm.get('activeStatus')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('activeStatus')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.journal.dateCreated" for="field_dateCreated">Date Created</label>
+                    <div class="input-group">
+                        <input id="field_dateCreated" type="text" class="form-control" name="dateCreated" ngbDatepicker #dateCreatedDp="ngbDatepicker" formControlName="dateCreated"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="dateCreatedDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="mpsapcApp.journal.dateModified" for="field_dateModified">Date Modified</label>
+                    <div class="input-group">
+                        <input id="field_dateModified" type="text" class="form-control" name="dateModified" ngbDatepicker #dateModifiedDp="ngbDatepicker" formControlName="dateModified"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="dateModifiedDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

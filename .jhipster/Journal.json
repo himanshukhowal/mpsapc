@@ -1,0 +1,62 @@
+{
+    "name": "Journal",
+    "fields": [
+        {
+            "fieldName": "journalAcronym",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "journalTitle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "activeStatus",
+            "fieldType": "ActiveStatus",
+            "fieldValues": "Active,Inactive",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "manuscript",
+            "otherEntityRelationshipName": "manuscriptJournalAcronym",
+            "relationshipValidateRules": "required",
+            "relationshipName": "journalAcronym"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "mail",
+            "otherEntityRelationshipName": "associatedJournal",
+            "relationshipValidateRules": "required",
+            "relationshipName": "mailingConfiguration"
+        }
+    ],
+    "changelogDate": "20200512081900",
+    "entityTableName": "journal",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

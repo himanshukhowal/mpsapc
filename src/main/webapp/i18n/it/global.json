@@ -7,6 +7,15 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entità",
+        "journal": "Journal",
+        "manuscript": "Manuscript",
+        "author": "Author",
+        "waiver": "Waiver",
+        "discount": "Discount",
+        "payment": "Payment",
+        "mail": "Mail",
+        "mailTemplates": "Mail Templates",
+        "contactUs": "Contact Us",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

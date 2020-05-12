@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Стварыць новы Contact Us",
+        "createOrEditLabel": "Стварыць або адрэдагаваць Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Новы Contact Us створан з ідэнтыфікатарам {{ param }}",
+      "updated": "Contact Us абноўлен з ідэнтыфікатарам {{ param }}",
+      "deleted": "Contact Us выдален з ідэнтыфікатарам {{ param }}",
+      "delete": {
+        "question": "Вы ўпэўнены, што жадаеце выдаліць Contact Us {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

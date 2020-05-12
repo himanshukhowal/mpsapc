@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Yangi Contact Us qo`shish",
+        "createOrEditLabel": "Contact Usni tahrirlash",
+        "notFound": "No Contactuses found"
+      },
+      "created": "Contact Us {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Contact Us saqlandi",
+      "deleted": "{{ param }}- Contact Us o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Contact Usni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

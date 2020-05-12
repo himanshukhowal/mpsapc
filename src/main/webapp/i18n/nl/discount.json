@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "Maak een nieuwe Discount",
+        "createOrEditLabel": "Maak of wijzig een Discount",
+        "notFound": "No Discounts found"
+      },
+      "created": "A new Discount is created with identifier {{ param }}",
+      "updated": "A Discount is updated with identifier {{ param }}",
+      "deleted": "A Discount is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Discount {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "dateFrom": "Date From",
+      "dateTo": "Date To",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

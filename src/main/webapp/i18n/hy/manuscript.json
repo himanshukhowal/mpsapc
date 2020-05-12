@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Ստեղծել նոր Manuscript",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Նոր Manuscript ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Manuscript թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Manuscript հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Manuscript {{ id }}?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "linkedPayment": "Linked Payment",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym",
+      "manuscriptAuthorName": "Manuscript Author Name"
+    }
+  }
+}

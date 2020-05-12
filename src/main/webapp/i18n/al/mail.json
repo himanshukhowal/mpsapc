@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "Krijo një të ri Mail",
+        "createOrEditLabel": "Krijo ose përpuno një Mail",
+        "notFound": "No Mail found"
+      },
+      "created": "Një Mail i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Mail u përpunua me identifikues {{ param }}",
+      "deleted": "Një Mail u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Mail {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "mpsapcApp": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "Kreiraj novi Author",
+        "createOrEditLabel": "Kreirajte ili izmenite Author",
+        "notFound": "No Authors found"
+      },
+      "created": "Kreiran je novi Author pod nazivom {{ param }}",
+      "updated": "Author pod nazivom {{ param }} je ažuriran",
+      "deleted": "Author pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Author pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "institute": "Institute",
+      "designation": "Designation",
+      "activeStatus": "Active Status",
+      "firstName": "First Name"
+    }
+  }
+}

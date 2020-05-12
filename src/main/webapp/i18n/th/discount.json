@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "discount": {
+      "home": {
+        "title": "Discounts",
+        "createLabel": "สร้าง Discount",
+        "createOrEditLabel": "สร้างหรือแก้ไข Discount",
+        "notFound": "No Discounts found"
+      },
+      "created": "Discount ถูกสร้างด้วย {{ param }}",
+      "updated": "Discount ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Discount ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Discount {{ id }}?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "discountType": "Discount Type",
+      "entityName": "Entity Name",
+      "amount": "Amount",
+      "dateFrom": "Date From",
+      "dateTo": "Date To",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

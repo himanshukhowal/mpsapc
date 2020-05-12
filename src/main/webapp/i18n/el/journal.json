@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Δημιουργήστε ένα νέο Journal",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Journal",
+        "notFound": "No Journals found"
+      },
+      "created": "Ένα νέο Journal έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Journal έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Journal έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Journal {{ id }};"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym",
+      "mailingConfiguration": "Mailing Configuration"
+    }
+  }
+}

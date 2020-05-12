@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "Lisa uus Journal",
+        "createOrEditLabel": "Lisa või muuda Journal",
+        "notFound": "No Journals found"
+      },
+      "created": "Uus Journal on loodud identifikaatoriga {{ param }}",
+      "updated": "Journal identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Journal identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Journal {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym",
+      "mailingConfiguration": "Mailing Configuration"
+    }
+  }
+}

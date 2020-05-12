@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Yangi Manuscript qo`shish",
+        "createOrEditLabel": "Manuscriptni tahrirlash",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Manuscript {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Manuscript saqlandi",
+      "deleted": "{{ param }}- Manuscript o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Manuscriptni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "linkedPayment": "Linked Payment",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym",
+      "manuscriptAuthorName": "Manuscript Author Name"
+    }
+  }
+}

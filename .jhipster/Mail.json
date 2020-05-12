@@ -1,0 +1,65 @@
+{
+    "name": "Mail",
+    "fields": [
+        {
+            "fieldName": "mailConfigurationName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "stageName",
+            "fieldType": "APCStatus",
+            "fieldValues": "Initiated,Pending,Completed,RefundInitiated,Refunded",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "activeStatus",
+            "fieldType": "ActiveStatus",
+            "fieldValues": "Active,Inactive",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "journal",
+            "otherEntityRelationshipName": "mailingConfiguration",
+            "relationshipValidateRules": "required",
+            "relationshipName": "associatedJournal",
+            "otherEntityField": "journalAcronym"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "mailTemplates",
+            "otherEntityRelationshipName": "templateName",
+            "relationshipValidateRules": "required",
+            "relationshipName": "associatedMailTemplate",
+            "otherEntityField": "templateName"
+        }
+    ],
+    "changelogDate": "20200512082500",
+    "entityTableName": "mail",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

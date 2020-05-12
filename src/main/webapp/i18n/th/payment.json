@@ -1,0 +1,25 @@
+{
+  "mpsapcApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "สร้าง Payment",
+        "createOrEditLabel": "สร้างหรือแก้ไข Payment",
+        "notFound": "No Payments found"
+      },
+      "created": "Payment ถูกสร้างด้วย {{ param }}",
+      "updated": "Payment ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Payment ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "currency": "Currency",
+      "amount": "Amount",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

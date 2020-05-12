@@ -1,0 +1,27 @@
+{
+  "mpsapcApp": {
+    "contactUs": {
+      "home": {
+        "title": "Contactuses",
+        "createLabel": "Creeare o nouă entitate Contact Us",
+        "createOrEditLabel": "Creeare sau editare Contact Us",
+        "notFound": "No Contactuses found"
+      },
+      "created": "A fost creată o nouă entitate Contact Us cu identificatorul {{ param }}",
+      "updated": "Contact Us cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Contact Us cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Contact Us {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact Us"
+      },
+      "name": "Name",
+      "email": "Email",
+      "contact": "Contact",
+      "message": "Message",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified"
+    }
+  }
+}

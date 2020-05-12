@@ -1,0 +1,63 @@
+{
+    "name": "Discount",
+    "fields": [
+        {
+            "fieldName": "discountType",
+            "fieldType": "DiscountType",
+            "fieldValues": "Journal,Country,Institute",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "entityName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "amount",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateFrom",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateTo",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "activeStatus",
+            "fieldType": "ActiveStatus",
+            "fieldValues": "Active,Inactive",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200512082300",
+    "entityTableName": "discount",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

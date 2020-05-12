@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "Pridať Manuscript",
+        "createOrEditLabel": "Pridať alebo upraviť Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Bol vytvorený potomok entity Manuscript s identifikátorom {{ param }}",
+      "updated": "Potomok entity Manuscript s identifikátorom {{ param }} bol upravený.",
+      "deleted": "Potomok entity Manuscript s identifikátorom {{ param }} bol vymazaný.",
+      "delete": {
+        "question": "Ste si istý, že chcete vymazať Manuscript {{ id }}?"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "linkedPayment": "Linked Payment",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym",
+      "manuscriptAuthorName": "Manuscript Author Name"
+    }
+  }
+}

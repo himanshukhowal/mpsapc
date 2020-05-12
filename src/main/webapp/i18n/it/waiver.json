@@ -1,0 +1,26 @@
+{
+  "mpsapcApp": {
+    "waiver": {
+      "home": {
+        "title": "Waivers",
+        "createLabel": "Genera un nuovo Waiver",
+        "createOrEditLabel": "Genera o modifica un Waiver",
+        "notFound": "No Waivers found"
+      },
+      "created": "&Egrave; stato generato un nuovo Waiver con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Waiver identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Waiver con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Waiver {{ id }}?"
+      },
+      "detail": {
+        "title": "Waiver"
+      },
+      "waiverType": "Waiver Type",
+      "entityName": "Entity Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "สร้าง Mail",
+        "createOrEditLabel": "สร้างหรือแก้ไข Mail",
+        "notFound": "No Mail found"
+      },
+      "created": "Mail ถูกสร้างด้วย {{ param }}",
+      "updated": "Mail ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Mail ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Mail {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "mpsapcApp": {
+    "manuscript": {
+      "home": {
+        "title": "Manuscripts",
+        "createLabel": "创建新 Manuscript",
+        "createOrEditLabel": "创建或编辑 Manuscript",
+        "notFound": "No Manuscripts found"
+      },
+      "created": "Manuscript {{ param }} 创建成功",
+      "updated": "Manuscript {{ param }} 更新成功",
+      "deleted": "Manuscript {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Manuscript {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Manuscript"
+      },
+      "manuscriptId": "Manuscript Id",
+      "manuscriptTitle": "Manuscript Title",
+      "apcStatus": "Apc Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "linkedPayment": "Linked Payment",
+      "manuscriptJournalAcronym": "Manuscript Journal Acronym",
+      "manuscriptAuthorName": "Manuscript Author Name"
+    }
+  }
+}

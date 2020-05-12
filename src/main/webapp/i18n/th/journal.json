@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "journal": {
+      "home": {
+        "title": "Journals",
+        "createLabel": "สร้าง Journal",
+        "createOrEditLabel": "สร้างหรือแก้ไข Journal",
+        "notFound": "No Journals found"
+      },
+      "created": "Journal ถูกสร้างด้วย {{ param }}",
+      "updated": "Journal ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Journal ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Journal {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal"
+      },
+      "journalAcronym": "Journal Acronym",
+      "journalTitle": "Journal Title",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "journalAcronym": "Journal Acronym",
+      "mailingConfiguration": "Mailing Configuration"
+    }
+  }
+}

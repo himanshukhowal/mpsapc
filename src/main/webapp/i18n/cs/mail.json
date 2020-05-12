@@ -1,0 +1,28 @@
+{
+  "mpsapcApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "createLabel": "Vytvořit Mail",
+        "createOrEditLabel": "Vytvořit nebo upravit Mail",
+        "notFound": "No Mail found"
+      },
+      "created": "Byl vytvořen potomek entity Mail s identifikátorem {{ param }}",
+      "updated": "Potomek entity Mail s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Mail s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Mail {{ id }}?"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "mailConfigurationName": "Mail Configuration Name",
+      "stageName": "Stage Name",
+      "activeStatus": "Active Status",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "associatedJournal": "Associated Journal",
+      "associatedMailTemplate": "Associated Mail Template"
+    }
+  }
+}
